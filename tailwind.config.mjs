@@ -6,6 +6,17 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontWeight: {
+      bold: "600",
+    },
+    fontSize: {
+      lg: "42px",
+    },
+    colors: {
+      colorPrimary: "#1E85A2",
+      colorSecondary: "white",
+      isTransparent: "transparent",
+    },
     extend: {
       colors: {
         background: "var(--background)",
