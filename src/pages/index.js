@@ -1,12 +1,24 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSection from '@/components/HeroSection';
+import Navbar from '@/components/Navbar';
+import TrustMarkers from '@/components/TrustMarkers';
+import MediaCoverage from '@/components/MediaCoverage';
+import Services from '@/components/Services';
 
 export default function Home() {
   return (
-    <div
-      className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 `}
-    >
-      <HeroSection />
-      <h2>Heading 2</h2>
+    <div className='container mx-auto pb-8 px-4'>
+      <Navbar />
+      <main className='grid grid-cols-12 gap-4'>
+        <section className='col-span-12'>
+          <div className='w-full h-[450px] bg-gray-100'>
+            <HeroSection />
+            Herosection placeholder
+          </div>
+        </section>
+        <TrustMarkers className='col-span-12' />
+        <MediaCoverage className='col-span-12 mt-20' />
+        <Services className='col-span-12 mt-20' />
+      </main>
     </div>
   );
 }
