@@ -3,12 +3,10 @@ const Button = ({ props }) => {
 
   return (
     <button
-      class={`rounded-sm h-fit ${
+      class={`rounded-md font-bold py-2 h-fit text-nowrap border-2 border-colorPrimary ${
         textColorPrimary ? `text-colorPrimary` : `text-colorSecondary`
       } ${
-        backgroundPrimary
-          ? `bg-colorPrimary`
-          : `bg-isTransparent border-2 border-colorPrimary`
+        backgroundPrimary ? `bg-colorPrimary px-3` : `bg-isTransparent px-5`
       }`}
     >
       {text}

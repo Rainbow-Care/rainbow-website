@@ -1,23 +1,24 @@
-import { Geist, Geist_Mono } from "next/font/google";
-
-import HeroSection from "@/components/HeroSection";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import HeroSection from '@/components/HeroSection';
+import Navbar from '@/components/Navbar';
+import TrustMarkers from '@/components/TrustMarkers';
+import MediaCoverage from '@/components/MediaCoverage';
+import Services from '@/components/Services';
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} grid justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <HeroSection />
+    <div className='container mx-auto pb-8 px-4'>
+      <Navbar />
+      <main className='grid grid-cols-12 gap-4'>
+        <section className='col-span-12'>
+          <div className='w-full h-[450px] bg-gray-100'>
+            <HeroSection />
+            Herosection placeholder
+          </div>
+        </section>
+        <TrustMarkers className='col-span-12' />
+        <MediaCoverage className='col-span-12 mt-20' />
+        <Services className='col-span-12 mt-20' />
+      </main>
     </div>
   );
 }

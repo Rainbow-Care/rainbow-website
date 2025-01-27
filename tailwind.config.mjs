@@ -22,6 +22,9 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        body: ["Instrument Sans", "serif"],
+      },
     },
   },
   plugins: [],
