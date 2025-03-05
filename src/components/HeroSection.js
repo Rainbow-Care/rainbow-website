@@ -4,6 +4,7 @@ import Image from 'next/image';
 const HeroSection = () => {
   return (
     <div class='grid grid-flow-col w-full'>
+      {/* Left half */}
       <div class='flex flex-col w-2/5'>
         <div>
           <h1 class='font-bold text-lg'>
@@ -31,35 +32,33 @@ const HeroSection = () => {
           />
         </div>
       </div>
+
+      {/* Right half */}
       <div class='grid grid-flow-col w-3/5 py-4'>
         <div class='flex flex-col h-fit w-full'>
           <div>
             <img
-              src='/images/RainbowDayCareHeroSectionImage1.svg'
+              src='/images/RainbowDayCareHeroSectionImage1.jpg'
               alt='Logo of Rainbow Day Care'
             />
           </div>
 
           <div>
             <img
-              src='/images/RainbowDayCareHeroSectionImage3.svg'
+              src='/images/RainbowDayCareHeroSectionImage3.jpg'
               alt='Logo of Rainbow Day Care'
             />
           </div>
         </div>
         <div class='flex flex-col w-fit'>
-          <Image
-            src='/images/RainbowDayCareHeroSectionImage2.svg'
-            width={108}
-            height={144}
+          <img
+            src='/images/RainbowDayCareHeroSectionImage2.jpg'
             alt='Logo of Rainbow Day Care'
-          ></Image>
-          <Image
-            src='/images/RainbowDayCareHeroSectionImage4.svg'
-            width={175}
-            height={202}
+          ></img>
+          <img
+            src='/images/RainbowDayCareHeroSectionImage4.jpg'
             alt='Logo of Rainbow Day Care'
-          ></Image>
+          ></img>
         </div>
       </div>
     </div>
