@@ -29,46 +29,46 @@ const Overview = ({ className }) => {
 
         {/* Right half */}
         <div class='flex flex-row w-1/2 h-[24rem] overflow-y-auto gap-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-          <div class='flex flex-col w-1/2'>
+          <div class='flex flex-col w-1/2 gap-2'>
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage1.svg'
+                src='/images/RainbowDayCareHeroSectionImage1.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage3.svg'
+                src='/images/RainbowDayCareHeroSectionImage3.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
           </div>
-          <div class='flex flex-col w-1/2'>
+          <div class='flex flex-col w-1/2 gap-2'>
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage3.svg'
+                src='/images/RainbowDayCareHeroSectionImage3.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
