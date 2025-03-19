@@ -2,8 +2,8 @@ import cx from 'classnames';
 
 import Button from './Button';
 
-const Title = 'Life at Rainbow';
-const Description =
+const TITLE = 'Life at Rainbow';
+const DESCRIPTION =
   'Our days are structured to fit the physical and mental needs of our wards to keep them happy and fit. Be it art and craft, music, dance, discourses and games - we have it all.';
 
 const Overview = ({ className }) => {
@@ -13,8 +13,8 @@ const Overview = ({ className }) => {
         <div class='flex flex-col w-1/2 self-center'>
           {/* Left half */}
           <div class='flex flex-col w-3/4 gap-4'>
-            <h2 className='mb-5'>{Title}</h2>
-            <p>{Description}</p>
+            <h2 className='mb-5'>{TITLE}</h2>
+            <p>{DESCRIPTION}</p>
             <span>
               <Button
                 props={{
