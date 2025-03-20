@@ -6,6 +6,7 @@ import Services from '@/components/Services';
 import ReasonToChoose from '@/components/ReasonToChoose';
 import Reviews from '@/components/Reviews';
 import Overview from '@/components/Overview';
+import Questions from '@/components/Questions';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <ReasonToChoose className='col-span-12 mt-20' />
         <Reviews className='col-span-12 mt-20' />
         <Overview className='col-span-12 mt-20' />
+        <Questions className='col-span-12 mt-20' />
       </main>
     </div>
   );
