@@ -47,7 +47,7 @@ const TrustMarkerCard = ({ value, text }) => {
   return (
     <div className='flex flex-col'>
       <h2>{value}+</h2>
-      <p className='text-lg'>{text}</p>
+      <p className='text-md'>{text}</p>
     </div>
   );
 };

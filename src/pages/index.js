@@ -3,6 +3,9 @@ import Navbar from '@/components/Navbar';
 import TrustMarkers from '@/components/TrustMarkers';
 import MediaCoverage from '@/components/MediaCoverage';
 import Services from '@/components/Services';
+import ReasonToChoose from '@/components/ReasonToChoose';
+import Reviews from '@/components/Reviews';
+import Overview from '@/components/Overview';
 
 export default function Home() {
   return (
@@ -12,12 +15,14 @@ export default function Home() {
         <section className='col-span-12'>
           <div className='w-full h-[450px] bg-gray-100'>
             <HeroSection />
-            Herosection placeholder
           </div>
         </section>
         <TrustMarkers className='col-span-12' />
         <MediaCoverage className='col-span-12 mt-20' />
         <Services className='col-span-12 mt-20' />
+        <ReasonToChoose className='col-span-12 mt-20' />
+        <Reviews className='col-span-12 mt-20' />
+        <Overview className='col-span-12 mt-20' />
       </main>
     </div>
   );

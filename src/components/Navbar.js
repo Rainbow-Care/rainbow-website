@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import cx from 'classnames';
 
+import Button from './Button';
+
 const navLinks = [
   { link: 'home', display: 'Home' },
   { link: 'gallery', display: 'Gallery' },
@@ -79,7 +81,7 @@ const Navbar = () => {
         >
           <ul
             class={cx(
-              'flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-base'
+              'flex flex-col items-center p-4 h-fit md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white text-base'
             )}
           >
             {navLinks.map(({ link, display }) => (
@@ -93,6 +95,13 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <Button
+              props={{
+                text: 'Contact Us',
+                textColorPrimary: false,
+                backgroundPrimary: true,
+              }}
+            />
           </ul>
         </div>
       </div>
@@ -101,3 +110,32 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// import Image from "next/image";
+
+// const Navbar = () => {
+//   return (
+//     <div class="flex flex-row">
+//       <Image
+//         src="/images/RainbowDayCareLogo.svg"
+//         width={200}
+//         height={200}
+//         alt="Logo of Rainbow Day Care"
+//       ></Image>
+//       <div class="flex flex-row w-full">
+//         <div class="flex flex-row">
+//           <a>Home</a>
+//           <a>Testimonials</a>
+//           <a>Gallery</a>
+//           <a>Patient Portal</a>
+//           <a>About Us</a>
+//         </div>
+//         <button class="h-33 w-117" color="#1e85a2">
+//           Contact Us
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Navbar;
