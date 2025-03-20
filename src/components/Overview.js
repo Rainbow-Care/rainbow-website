@@ -2,8 +2,8 @@ import cx from 'classnames';
 
 import Button from './Button';
 
-const Title = 'Life at Rainbow';
-const Description =
+const TITLE = 'Life at Rainbow';
+const DESCRIPTION =
   'Our days are structured to fit the physical and mental needs of our wards to keep them happy and fit. Be it art and craft, music, dance, discourses and games - we have it all.';
 
 const Overview = ({ className }) => {
@@ -13,8 +13,8 @@ const Overview = ({ className }) => {
         <div class='flex flex-col w-1/2 self-center'>
           {/* Left half */}
           <div class='flex flex-col w-3/4 gap-4'>
-            <h2 className='mb-5'>{Title}</h2>
-            <p>{Description}</p>
+            <h2 className='mb-5'>{TITLE}</h2>
+            <p>{DESCRIPTION}</p>
             <span>
               <Button
                 props={{
@@ -29,46 +29,46 @@ const Overview = ({ className }) => {
 
         {/* Right half */}
         <div class='flex flex-row w-1/2 h-[24rem] overflow-y-auto gap-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-          <div class='flex flex-col w-1/2'>
+          <div class='flex flex-col w-1/2 gap-2'>
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage1.svg'
+                src='/images/RainbowDayCareHeroSectionImage1.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage3.svg'
+                src='/images/RainbowDayCareHeroSectionImage3.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
           </div>
-          <div class='flex flex-col w-1/2'>
+          <div class='flex flex-col w-1/2 gap-2'>
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage4.svg'
+                src='/images/RainbowDayCareHeroSectionImage4.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
 
             <div>
               <img
-                src='/images/RainbowDayCareHeroSectionImage3.svg'
+                src='/images/RainbowDayCareHeroSectionImage3.jpg'
                 alt='Logo of Rainbow Day Care'
               />
             </div>
