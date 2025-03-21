@@ -1,4 +1,4 @@
-const Title = 'Our Team at Rainbow';
+const TITLE = 'Our Team at Rainbow';
 const TeamMembers = [
   {
     memberName: 'Anuradha Karkare',
@@ -41,8 +41,8 @@ const Team = ({ className }) => {
   return (
     <section className={className}>
       <div className='flex flex-col gap-5'>
-        <h2>{Title}</h2>
-        <div className='flex flex-col gap-5 w-4/5'>
+        <h2>{TITLE}</h2>
+        <div className='flex flex-col gap-5 w-11/12'>
           <div className='flex flex-row'>
             <div className='flex flex-col gap-4'>
               <img
