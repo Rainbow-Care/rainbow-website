@@ -1,5 +1,5 @@
 const TITLE = 'Our Team at Rainbow';
-const TeamMembers = [
+const TEAM_MEMBERS = [
   {
     memberName: 'Anuradha Karkare',
     imgSrc: '/images/teamMembers/AnuradhaKarkare.jpg',
@@ -43,90 +43,26 @@ const Team = ({ className }) => {
       <div className='flex flex-col gap-5'>
         <h2>{TITLE}</h2>
         <div className='flex flex-col gap-5 w-11/12'>
-          <div className='flex flex-row'>
-            <div className='flex flex-col gap-4'>
-              <img
-                src={TeamMembers[0].imgSrc}
-                alt='Anuradha Karkare'
-                style={{ minWidth: '150px' }}
-              />
-              <div>
-                <div class='font-bold'>{TeamMembers[0].memberName}</div>
-                {TeamMembers[0].designation}
-              </div>
-            </div>
-            <div className='self-center pl-[75px]'>
-              {TeamMembers[0].description}
-            </div>
-          </div>
-
-          <div className='flex flex-row'>
-            <div className='flex flex-col gap-4'>
-              <img
-                src={TeamMembers[1].imgSrc}
-                alt='Vaishali Joshi'
-                style={{ minWidth: '150px' }}
-              />
-              <div>
-                <div class='font-bold'>{TeamMembers[1].memberName}</div>
-                {TeamMembers[1].designation}
-              </div>
-            </div>
-            <div className='self-center pl-[75px]'>
-              {TeamMembers[1].description}
-            </div>
-          </div>
-
-          <div className='flex flex-row'>
-            <div className='flex flex-col gap-4'>
-              <img
-                src={TeamMembers[2].imgSrc}
-                alt='Vaishali Joshi'
-                style={{ minWidth: '150px' }}
-              />
-              <div>
-                <div class='font-bold'>{TeamMembers[2].memberName}</div>
-                {TeamMembers[2].designation}
-              </div>
-            </div>
-            <div className='self-center pl-[75px]'>
-              {TeamMembers[2].description}
-            </div>
-          </div>
-
-          <div className='flex flex-row'>
-            <div className='flex flex-col gap-4'>
-              <img
-                src={TeamMembers[3].imgSrc}
-                alt='Vartika Gupta'
-                style={{ minWidth: '150px' }}
-              />
-              <div>
-                <div class='font-bold'>{TeamMembers[3].memberName}</div>
-                {TeamMembers[3].designation}
-              </div>
-            </div>
-            <div className='self-center pl-[75px]'>
-              {TeamMembers[3].description}
-            </div>
-          </div>
-
-          <div className='flex flex-row'>
-            <div className='flex flex-col gap-4'>
-              <img
-                src={TeamMembers[4].imgSrc}
-                alt='Yogini Mandke'
-                style={{ minWidth: '150px' }}
-              />
-              <div>
-                <div class='font-bold'>{TeamMembers[4].memberName}</div>
-                {TeamMembers[4].designation}
-              </div>
-            </div>
-            <div className='self-center pl-[75px]'>
-              {TeamMembers[4].description}
-            </div>
-          </div>
+          {TEAM_MEMBERS.map(
+            ({ memberName, imgSrc, designation, description }) => {
+              return (
+                <div key={memberName} className='flex flex-row'>
+                  <div className='flex flex-col gap-4'>
+                    <img
+                      src={imgSrc}
+                      alt={memberName}
+                      style={{ minWidth: '150px' }}
+                    />
+                    <div>
+                      <div class='font-bold'>{memberName}</div>
+                      {designation}
+                    </div>
+                  </div>
+                  <div className='self-center pl-[75px]'>{description}</div>
+                </div>
+              );
+            }
+          )}
         </div>
       </div>
     </section>
