@@ -87,7 +87,7 @@ const Navbar = () => {
             {navLinks.map(({ link, display }) => (
               <li key={link}>
                 <Link
-                  href='#'
+                  href={`/${link === 'home' ? '' : link}`}
                   class='block py-2 px-3 rounded md:bg-transparent md:p-0'
                   aria-current='page'
                 >
