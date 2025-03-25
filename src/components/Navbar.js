@@ -19,7 +19,7 @@ const Navbar = () => {
         <a href='/' class='flex items-center space-x-3 rtl:space-x-reverse'>
           <img
             src='/images/rainbow_logo.svg'
-            class='h-[90px]'
+            class='h-[120px]'
             alt='Flowbite Logo'
           />
         </a>
