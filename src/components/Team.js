@@ -35,6 +35,13 @@ const TEAM_MEMBERS = [
     description:
       'A seasoned Accountant with 20+ years of experience, she ensures smooth financial operations at Rainbow Day Care Centre. Beyond her accounting role, she actively contributes to the team as a facilitator in music therapy and other sessions. Her dedication to social work and passion for learning make her a valuable asset to the centre.',
   },
+  {
+    memberName: 'Nivedita Deo',
+    imgSrc: '/images/teamMembers/NiveditaDeo.jpg',
+    designation: 'Support Staff',
+    description:
+      'Nivedita has completed her B.A. in Sanskrit and is a skilled beautician with 20 years of experience. Currently, she is studying Bach flower remedies and biochemic salts as supportive medicine therapies. She recently joined us at Rainbow, and works closely with Neha, assisting in exercise sessions by demonstrating the movements. In addition, she leads book reading activities, reading aloud to seniors. Always ready to help, she is fully active, with excellent observation skills that make her an invaluable part of the team.',
+  },
 ];
 
 const Team = ({ className }) => {
