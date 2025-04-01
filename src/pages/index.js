@@ -9,6 +9,7 @@ import Overview from '@/components/Overview';
 import Team from '@/components/Team';
 import Questions from '@/components/Questions';
 import Contact from '@/components/Contact';
+import Questions from '@/components/Questions';
 
 export default function Home() {
   return (
