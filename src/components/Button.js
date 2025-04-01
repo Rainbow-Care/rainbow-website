@@ -1,5 +1,5 @@
 const Button = ({ props }) => {
-  const { text, textColorPrimary, backgroundPrimary } = props;
+  const { text, textColorPrimary, backgroundPrimary, ...rest } = props;
 
   return (
     <button
@@ -7,7 +7,8 @@ const Button = ({ props }) => {
         textColorPrimary ? `text-colorPrimary` : `text-colorSecondary`
       } ${
         backgroundPrimary ? `bg-colorPrimary px-3` : `bg-isTransparent px-5`
-      }`}
+      } ${text.length <= 4 ? `px-10` : ``}`}
+      {...rest}
     >
       {text}
     </button>

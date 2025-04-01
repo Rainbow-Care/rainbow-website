@@ -4,7 +4,10 @@ import './style.css';
 
 const Carousel = ({ reviewList }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+<<<<<<< HEAD
   // const [timerID, setTimerID] = useState(null);
+=======
+>>>>>>> d6f0303d657641dccb3757160828ce51e9f2af02
 
   const nextSlide = () => {
     clearTimeout(timerID);
@@ -22,12 +25,15 @@ const Carousel = ({ reviewList }) => {
     );
   };
 
+<<<<<<< HEAD
   // setInterval(() => {
   //   activeIndex === reviewList.length - 1
   //     ? setActiveIndex(0)
   //     : setActiveIndex(activeIndex + 1);
   // }, 10000);
 
+=======
+>>>>>>> d6f0303d657641dccb3757160828ce51e9f2af02
   return (
     <div className='carousel'>
       <div className='flex flex-col min-h-48 p-5 bg-[#FFD96C]'>
