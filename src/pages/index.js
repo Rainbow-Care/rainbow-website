@@ -8,6 +8,7 @@ import Reviews from '@/components/Reviews';
 import Overview from '@/components/Overview';
 import Team from '@/components/Team';
 import Contact from '@/components/Contact';
+import Questions from '@/components/Questions';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Reviews className='col-span-12 mt-20' />
         <Overview className='col-span-12 mt-20' />
         <Team className='col-span-12 mt-20' />
+        <Questions className='col-span-12 mt-20' />
         <Contact className='col-span-12 mt-20' />
       </main>
     </div>
