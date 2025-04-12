@@ -1,6 +1,6 @@
 const TITLE = 'Our Activity';
 
-const AMENITIES_LIST = [
+const ACTIVITIES_LIST = [
   {
     imgSrc: '/images/amenities/AmenitiesImage1.jpg',
     caption: 'Retiring rooms for afternoon (Male members)',
@@ -105,12 +105,12 @@ const Activity = ({ className }) => {
         <h2>{TITLE}</h2>
       </div>
       <div className='grid grid-cols-3 gap-6'>
-        {AMENITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
+        {ACTIVITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
             <div key={caption} className='w-[315px]'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`h-[48px] text-center rounded-b-md`}
+                className={`h-[48px] font-bold text-[#000000] text-center rounded-b-md`}
                 style={{ backgroundColor: captionBackground }}
               >
                 {caption}

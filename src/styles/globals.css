@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @layer base {
-  @font-face {
+  font-face {
     font-family: 'Nib Pro';
     font-style: normal;
     font-weight: 600;
@@ -17,6 +14,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+@theme {
+  --color-primary: #1e85a2;
+  --color-secondary: #ffffff;
+  --color-transparent: 'transparent';
 }
 
 /* @media (prefers-color-scheme: dark) {
