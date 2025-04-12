@@ -40,7 +40,7 @@ const Amenities = ({ className }) => {
             <div key={caption} className='w-2/5 mr-[10px] mb-[10px]'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`text-center rounded-b-md`}
+                className={`font-bold text-[#000000] text-center py-2 rounded-b-md`}
                 style={{ backgroundColor: captionBackground }}
               >
                 {caption}
