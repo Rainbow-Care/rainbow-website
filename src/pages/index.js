@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <main className='grid grid-cols-12 gap-4'>
         <section className='col-span-12'>
-          <div className='w-full h-[450px] bg-gray-100'>
+          <div className='w-full'>
             <HeroSection />
           </div>
         </section>
