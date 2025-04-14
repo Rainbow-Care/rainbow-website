@@ -2,11 +2,11 @@ import Button from './Button';
 
 const HeroSection = () => {
   return (
-    <div class='grid grid-flow-col w-full'>
+    <div className='flex flex-col md:flex-row gap-x-4 container mx-auto md:max-h-[450px]'>
       {/* Left half */}
-      <div class='flex flex-col w-2/5'>
-        <div>
-          <h1 class='font-bold text-lg'>
+      <div className='flex flex-col justify-center  order-last md:order-first'>
+        <div className="md:max-w-[380px] text-center md:text-left">
+          <h1 className='font-light'>
             A place that makes our silver citizens happy
           </h1>
           <p>
@@ -14,27 +14,26 @@ const HeroSection = () => {
             and wards to unwind, socialize and learn with their peers
           </p>
         </div>
-        <div class='flex h-fit flex-row gap-x-1	items-stretch	 justify-between'>
+        <div className='h-fit flex-row gap-x-8 mt-8 justify-center flex'>
           <Button
-            props={{
-              text: 'Schedule an appointment',
-              textColorPrimary: false,
-              backgroundPrimary: true,
-            }}
+            text='Schedule an appointment'
+            textColorPrimary={false}
+            backgroundPrimary
           />
           <Button
-            props={{
-              text: 'Learn More',
-              textColorPrimary: true,
-              backgroundPrimary: false,
-            }}
+            className="hidden md:inline"
+            text='Learn More'
+            textColorPrimary
+            backgroundPrimary={false}
           />
         </div>
+
       </div>
 
       {/* Right half */}
-      <div class='grid grid-flow-col w-3/5 py-4'>
-        <div class='flex flex-col h-fit w-full'>
+      <div style={{ aspectRatio: '650/450', overflow: 'hidden' }}
+        className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'>
+        <div className='flex flex-col h-fit w-full'>
           <div>
             <img
               src='/images/RainbowDayCareHeroSectionImage1.jpg'
@@ -49,7 +48,7 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div class='flex flex-col w-fit'>
+        <div className='flex flex-col w-fit'>
           <img
             src='/images/RainbowDayCareHeroSectionImage2.jpg'
             alt='Logo of Rainbow Day Care'

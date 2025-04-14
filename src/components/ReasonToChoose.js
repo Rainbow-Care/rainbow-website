@@ -5,10 +5,12 @@ const DESCRIPTION =
 const ReasonToChoose = ({ className }) => {
   return (
     <section className={className}>
-      <h2>{TITLE}</h2>
-      <div className='flex flex-col'>
-        <p>{DESCRIPTION}</p>
-        <div className='min-w min-h-48 bg-[#FFD96C]'>Conversation video</div>
+      <div className="container mx-auto">
+        <h2>{TITLE}</h2>
+        <div className='flex flex-col'>
+          <p>{DESCRIPTION}</p>
+          <div className='min-w min-h-48 bg-[#FFD96C]'>Conversation video</div>
+        </div>
       </div>
     </section>
   );

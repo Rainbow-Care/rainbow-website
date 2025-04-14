@@ -47,29 +47,31 @@ const TEAM_MEMBERS = [
 const Team = ({ className }) => {
   return (
     <section className={className}>
-      <div className='flex flex-col gap-5'>
-        <h2>{TITLE}</h2>
-        <div className='flex flex-col gap-5 w-11/12'>
-          {TEAM_MEMBERS.map(
-            ({ memberName, imgSrc, designation, description }) => {
-              return (
-                <div key={memberName} className='flex flex-row'>
-                  <div className='flex flex-col gap-4'>
-                    <img
-                      src={imgSrc}
-                      alt={memberName}
-                      style={{ minWidth: '150px' }}
-                    />
-                    <div>
-                      <div class='font-bold'>{memberName}</div>
-                      {designation}
+      <div className="container mx-auto">
+        <div className='flex flex-col gap-5'>
+          <h2>{TITLE}</h2>
+          <div className='flex flex-col gap-5 w-11/12'>
+            {TEAM_MEMBERS.map(
+              ({ memberName, imgSrc, designation, description }) => {
+                return (
+                  <div key={memberName} className='flex flex-row'>
+                    <div className='flex flex-col gap-4'>
+                      <img
+                        src={imgSrc}
+                        alt={memberName}
+                        style={{ minWidth: '150px' }}
+                      />
+                      <div>
+                        <div class='font-bold'>{memberName}</div>
+                        {designation}
+                      </div>
                     </div>
+                    <div className='self-center pl-[75px]'>{description}</div>
                   </div>
-                  <div className='self-center pl-[75px]'>{description}</div>
-                </div>
-              );
-            }
-          )}
+                );
+              }
+            )}
+          </div>
         </div>
       </div>
     </section>
