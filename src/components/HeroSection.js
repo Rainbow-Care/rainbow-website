@@ -2,7 +2,7 @@ import Button from './Button';
 
 const HeroSection = () => {
   return (
-    <div className='flex flex-col md:flex-row gap-x-4 md:max-h-[450px]'>
+    <div className='flex flex-col md:flex-row gap-x-4 container mx-auto md:max-h-[450px]'>
       {/* Left half */}
       <div className='flex flex-col justify-center  order-last md:order-first'>
         <div className="md:max-w-[380px] text-center md:text-left">
@@ -31,7 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right half */}
-      <div styles={{ aspectRatio: '650/450', overflow: 'hidden' }}
+      <div style={{ aspectRatio: '650/450', overflow: 'hidden' }}
         className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'>
         <div className='flex flex-col h-fit w-full'>
           <div>

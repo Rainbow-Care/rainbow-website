@@ -34,16 +34,18 @@ const servicesData = [
 const Services = ({ className, data = servicesData }) => {
   return (
     <section className={className}>
-      <h2>Care Tailored for You</h2>
-      <div className='grid grid-cols-3 gap-x-2 gap-y-12 mt-16'>
-        {data.map(({ icon, title, text }, idx) => (
-          <ServiceCard
-            key={`${idx}-{title}`}
-            icon={icon}
-            title={title}
-            text={text}
-          />
-        ))}
+      <div className="container mx-auto">
+        <h2>Care Tailored for You</h2>
+        <div className='grid grid-cols-3 gap-x-2 gap-y-12 mt-16'>
+          {data.map(({ icon, title, text }, idx) => (
+            <ServiceCard
+              key={`${idx}-{title}`}
+              icon={icon}
+              title={title}
+              text={text}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
