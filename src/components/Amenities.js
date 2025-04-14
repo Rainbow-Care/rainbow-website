@@ -34,10 +34,10 @@ const Amenities = ({ className }) => {
       <div className='justify-self-center mb-10'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-row flex-wrap place-content-center gap-6'>
+      <div className='flex flex-col justify-center gap-[16px]'>
         {AMENITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
-            <div key={caption} className='w-2/5 mr-[10px] mb-[10px]'>
+            <div key={caption} className='w-full mr-[10px]'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
                 className={`font-bold text-[#000000] text-center py-2 rounded-b-md`}

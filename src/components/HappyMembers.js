@@ -44,7 +44,7 @@ const HappyMembers = ({ className }) => {
       <div className='justify-self-center mb-6'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='flex flex-col gap-[16px]'>
         {HAPPY_MEMBERS_LIST.map(
           ({ imgSrc, caption, captionBackground }, index) => {
             return (

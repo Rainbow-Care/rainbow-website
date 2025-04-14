@@ -104,10 +104,10 @@ const Activity = ({ className }) => {
       <div className='justify-self-center mb-10'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='grid grid-cols-3 gap-6'>
+      <div className='flex flex-col gap-[16px]'>
         {ACTIVITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
-            <div key={caption} className='w-[315px]'>
+            <div key={caption}>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
                 className={`h-[48px] font-bold text-[#000000] text-center rounded-b-md`}
