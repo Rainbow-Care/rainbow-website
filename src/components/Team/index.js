@@ -1,3 +1,4 @@
+import Quote from "@/components/Quote";
 import './styles.css';
 
 const TITLE = 'Our Team at Rainbow';
@@ -54,9 +55,10 @@ const Team = ({ className }) => {
       <div className="container mx-auto">
         <div className='flex flex-col gap-5'>
           <h2>{TITLE}</h2>
-          <div className='flex flex-col gap-5 md:w-11/12'>
+          <div className='flex flex-col gap-16 md:gap-4 md:w-11/12'>
             {TEAM_MEMBERS.map(
               ({ memberName, imgSrc, designation, description }, index) => {
+                const imgBgColor = teamBgColors[index % teamBgColors.length];
                 return (
                   <div key={memberName} className='flex  flex-col md:flex-row gap-y-8'>
                     <div className='flex flex-col gap-4 place-items-center'>
@@ -67,7 +69,7 @@ const Team = ({ className }) => {
                           className="z-[10] relative"
                           style={{ minWidth: '150px' }}
                         />
-                        <div className="absolute z-[5] bottom-0 left-0 w-full h-[9rem] md:h-[15rem] bg-blue-500 rounded-t-full" style={{ backgroundColor: `${teamBgColors[index % teamBgColors.length]}` }}></div>
+                        <div className="absolute z-[5] bottom-0 left-0 w-full h-[9rem] md:h-[15rem] bg-blue-500 rounded-t-full" style={{ backgroundColor: `${imgBgColor}` }}></div>
 
                       </div>
                       <div className="text-center">
@@ -76,8 +78,8 @@ const Team = ({ className }) => {
                       </div>
                     </div>
                     <div className='self-center mx-auto md:pl-[75px] text-center md:text-left'>
-                      <span className="quote">{description}</span>
-                      <span className="end-quote" />
+                      <Quote color={imgBgColor}>{description}</Quote>
+
                     </div>
                   </div>
                 );
