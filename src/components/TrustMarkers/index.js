@@ -1,6 +1,6 @@
 import cx from 'classnames';
 
-import './styles.css';
+import styles from './styles.module.css';
 
 const trustMarkerData = [
   {
@@ -27,9 +27,9 @@ const TrustMarkers = ({
 }) => {
   return (
     <section className={cx(classNameFromProps, 'pt-20')}>
-      <div className='waves' style={{ width: '100%', height: '200px' }}></div>
+      <div className={styles.waves} style={{ width: '100%', height: '200px' }}></div>
 
-      <div className='trustMarkers-wrapper '>
+      <div className={styles.trustMarkersWrapper}>
         <div className="container mx-auto flex flex-col gap-y-8 md:flex-row md:gap-x-8 pb-8">
           {Array.isArray(trustMarkerData)
             ? data.map(({ value, text }, idx) => (

@@ -1,7 +1,8 @@
 
 import React from 'react';
+import cx from "classnames";
 import QuoteIcon from "@/components/QuoteIcon";
-import "./quote.css";
+import styles from "./quote.module.css";
 
 const Quote = ({
   children,
@@ -12,12 +13,12 @@ const Quote = ({
 
   return (
     <span className="relative">
-      <span className="relative before">
-        <QuoteIcon strokeColor={color} className="before-icon" styles={{
+      <span className={styles.before}>
+        <QuoteIcon strokeColor={color} className={styles.beforeIcon} styles={{
         }} /></span>
       <span>{children}</span>
-      <span className="after relative">
-        <QuoteIcon strokeColor={color} isCloseQuote className="after-icon" />
+      <span className={styles.after}>
+        <QuoteIcon strokeColor={color} isCloseQuote className={styles.afterIcon} />
       </span>
     </span>
 

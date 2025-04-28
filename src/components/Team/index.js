@@ -1,5 +1,4 @@
 import Quote from "@/components/Quote";
-import './styles.css';
 
 const TITLE = 'Our Team at Rainbow';
 const teamBgColors = ['#ED6C30', '#D7598B', '#40C0E7', '#F3FFA4', '#FFD96C'];

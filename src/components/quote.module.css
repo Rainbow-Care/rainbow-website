@@ -1,18 +1,19 @@
 
 .before, .after{
+	position: relative;
 	display: inline-block;
 	width: 1px;
 	height: 1px;
 }
 
-.before-icon{
+.beforeIcon{
 	position: absolute;
 	top: -48px;
 	left: -30px;
 
 }
 
-.after-icon{
+.afterIcon{
 	position: absolute;
 	bottom: -30px;
 	left: -14px;
