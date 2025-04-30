@@ -10,7 +10,7 @@ const Gallery = () => {
     <div className='flex flex-col'>
       <Navbar />
       <main className='flex flex-col'>
-        <div className='text-center mt-20'>
+        <div className='text-center mt-10'>
           <h1>{TITLE}</h1>
         </div>
         <Amenities className='col-span-12 mx-[16px] mt-20' />

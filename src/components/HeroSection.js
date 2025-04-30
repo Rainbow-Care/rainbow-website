@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className='flex flex-col md:flex-row gap-x-4 container mx-auto md:max-h-[450px]'>
       {/* Left half */}
       <div className='flex flex-col justify-center  order-last md:order-first'>
-        <div className="md:max-w-[380px] text-center md:text-left">
+        <div className='md:max-w-[380px] text-center md:text-left'>
           <h1 className='font-light'>
             A place that makes our silver citizens happy
           </h1>
@@ -21,18 +21,19 @@ const HeroSection = () => {
             backgroundPrimary
           />
           <Button
-            className="hidden md:inline"
+            className='hidden md:inline'
             text='Learn More'
             textColorPrimary
             backgroundPrimary={false}
           />
         </div>
-
       </div>
 
       {/* Right half */}
-      <div style={{ aspectRatio: '650/450', overflow: 'hidden' }}
-        className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'>
+      <div
+        style={{ aspectRatio: '650/450', overflow: 'hidden' }}
+        className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'
+      >
         <div className='flex flex-col h-fit w-full'>
           <div>
             <img

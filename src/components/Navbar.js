@@ -1,3 +1,6 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
 import cx from 'classnames';
@@ -12,11 +15,15 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const pathname = usePathname();
+
+  //console.log(window.location.pathname); //yields: "/js" (where snippets run)
+  //console.log(window.location.href);
+
   return (
     <nav class='bg-white border-gray-200'>
-      <div className="container mx-auto">
-
+      <div className='container mx-auto'>
         <div class='flex flex-wrap items-center justify-between py-4'>
           <a href='/' class='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
@@ -90,10 +97,18 @@ const Navbar = () => {
                 <li key={link}>
                   <Link
                     href={`/${link === 'home' ? '' : link}`}
-                    class='block py-2 px-3 rounded md:bg-transparent md:p-0'
+                    className='block py-2 px-3 rounded md:bg-transparent md:p-0'
                     aria-current='page'
                   >
-                    {display}
+                    <span
+                      className={
+                        pathname === '/' + link
+                          ? 'text-red underline decoration-3'
+                          : ''
+                      }
+                    >
+                      {display}
+                    </span>
                   </Link>
                 </li>
               ))}

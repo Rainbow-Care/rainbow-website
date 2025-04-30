@@ -41,17 +41,17 @@ const HAPPY_MEMBERS_LIST = [
 const HappyMembers = ({ className }) => {
   return (
     <section className={className}>
-      <div className='justify-self-center mb-6'>
+      <div className='text-center py-2 mb-6 sticky top-0 md:w-full bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-col gap-[16px]'>
+      <div className='flex flex-col md:grid md:grid-cols-3 lg:max-w-1/2 lg:justify-self-center gap-[16px] scroll-mt-[6] snap-y snap-start snap-always'>
         {HAPPY_MEMBERS_LIST.map(
           ({ imgSrc, caption, captionBackground }, index) => {
             return (
-              <div key={index}>
+              <div key={index} className='md:max-w-[333px] md:flex md:flex-col'>
                 <img src={imgSrc} alt={caption} className='rounded-t-md' />
                 <div
-                  className={`h-[48px] text-center rounded-b-md`}
+                  className={`min-h-[48px] md:grow- rounded-b-md`}
                   style={{ backgroundColor: captionBackground }}
                 >
                   {caption}

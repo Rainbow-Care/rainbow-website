@@ -101,19 +101,21 @@ const ACTIVITIES_LIST = [
 const Activity = ({ className }) => {
   return (
     <section className={className}>
-      <div className='justify-self-center mb-10'>
+      <div className='text-center mb-10 sticky top-0 w-full py-2 bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-col gap-[16px]'>
+      <div className='flex flex-col md:grid md:grid-cols-3 lg:max-w-1/2 lg:justify-self-center gap-[16px]'>
         {ACTIVITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
-            <div key={caption}>
+            <div key={caption} className='md:flex md:flex-col'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`h-[48px] font-bold text-[#000000] text-center rounded-b-md`}
-                style={{ backgroundColor: captionBackground }}
+                className={`md:grow font-bold text-[#000000] text-center rounded-b-md`}
+                style={{
+                  backgroundColor: captionBackground,
+                }}
               >
-                {caption}
+                <span>{caption}</span>
               </div>
             </div>
           );
