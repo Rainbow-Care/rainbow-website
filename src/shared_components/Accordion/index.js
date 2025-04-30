@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './style.css';
+import styles from './styles.module.css';
 
 const Accordion = ({ list }) => {
   const [openSections, setOpenSections] = useState(new Set());
@@ -25,7 +25,7 @@ const Accordion = ({ list }) => {
             <div className='flex flex-col gap-4'>
               <button
                 data-id={question}
-                className='accordion-item-title font-bold'
+                className={`${styles.accordionItemTitle} font-bold`}
                 onClick={onClickHandler}
               >
                 {question}
@@ -34,8 +34,9 @@ const Accordion = ({ list }) => {
             </div>
             <span
               data-id={question}
-              className={`self-center
- accordion-icon ${isExpanded && `accordion-icon--rotated`}`}
+              className={`self-center ${styles.accordionIcon} ${
+                isExpanded && styles.accordionIconRotated
+              }`}
               onClick={onClickHandler}
             />
           </div>
