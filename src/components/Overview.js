@@ -11,10 +11,10 @@ const Overview = ({ className }) => {
     <section className={cx(className, '')}>
       <div className="container mx-auto">
 
-        <div class='flex flex-row w-full'>
-          <div class='flex flex-col w-1/2 self-center'>
+        <div class='flex flex-col md:flex-row mx-auto items-center md:items-start w-full'>
+          <div class='flex flex-col md:w-1/2 self-center'>
             {/* Left half */}
-            <div class='flex flex-col w-3/4 gap-4'>
+            <div class='flex flex-col w-full md:w-3/4 gap-4'>
               <h2 className='mb-5'>{TITLE}</h2>
               <p>{DESCRIPTION}</p>
               <span>

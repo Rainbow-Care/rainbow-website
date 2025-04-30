@@ -1,4 +1,5 @@
-import Button from './Button';
+import Button from '@/components/Button';
+import HeroImage from './HeroImage';
 
 const HeroSection = () => {
   return (
@@ -34,31 +35,7 @@ const HeroSection = () => {
         style={{ aspectRatio: '650/450', overflow: 'hidden' }}
         className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'
       >
-        <div className='flex flex-col h-fit w-full'>
-          <div>
-            <img
-              src='/images/RainbowDayCareHeroSectionImage1.jpg'
-              alt='Logo of Rainbow Day Care'
-            />
-          </div>
-
-          <div>
-            <img
-              src='/images/RainbowDayCareHeroSectionImage3.jpg'
-              alt='Logo of Rainbow Day Care'
-            />
-          </div>
-        </div>
-        <div className='flex flex-col w-fit'>
-          <img
-            src='/images/RainbowDayCareHeroSectionImage2.jpg'
-            alt='Logo of Rainbow Day Care'
-          ></img>
-          <img
-            src='/images/RainbowDayCareHeroSectionImage4.jpg'
-            alt='Logo of Rainbow Day Care'
-          ></img>
-        </div>
+        <HeroImage />
       </div>
     </div>
   );

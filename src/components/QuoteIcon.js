@@ -1,0 +1,52 @@
+import React from 'react';
+
+
+const QuoteIcon = ({
+  width = 47,
+  height = 59,
+  strokeColor = '#ED6C30',
+  isCloseQuote = false,
+  className = "",
+  styles = {},
+}) => {
+  const rotationStyle = isCloseQuote ? { transform: 'rotate(180deg)' } : {};
+
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 47 59"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      style={{ ...rotationStyle, ...styles }}
+      className={className}
+    >
+      <path
+        d="M20.5173 35.5729C17.7759 36.0795 15.0349 36.5026 12.2755 36.8937"
+        stroke={strokeColor}
+        strokeWidth="1.03612"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M21.5733 29.4641C18.4542 28.9677 15.4677 27.9565 12.425 27.1535"
+        stroke={strokeColor}
+        strokeWidth="1.03612"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M24.5694 24.1878C22.4648 22.5809 20.4762 20.7007 19.0269 18.4823"
+        stroke={strokeColor}
+        strokeWidth="1.03612"
+        strokeMiterlimit="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
+
+export default QuoteIcon;
