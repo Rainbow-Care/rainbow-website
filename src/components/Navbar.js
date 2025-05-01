@@ -10,13 +10,18 @@ import Button from './Button';
 const navLinks = [
   { link: 'home', display: 'Home' },
   { link: 'gallery', display: 'Gallery' },
-  { link: 'patient_portal', display: 'Patient Portal' },
-  { link: 'about_us', display: 'About Us' },
+  // { link: 'patient_portal', display: 'Patient Portal' },
+  // { link: 'about_us', display: 'About Us' },
 ];
 
 const Navbar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
   const pathname = usePathname();
+
+  const scrollToSection = () => {
+    const element = document.getElementById('contact');
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   //console.log(window.location.pathname); //yields: "/js" (where snippets run)
   //console.log(window.location.href);
@@ -118,6 +123,7 @@ const Navbar = () => {
                   backgroundPrimary={true}
                   text='Contact Us'
                   className='py-1 text-xs'
+                  onClick={scrollToSection}
                 />
               </li>
             </ul>
