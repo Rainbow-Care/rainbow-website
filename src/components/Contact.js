@@ -11,8 +11,8 @@ const Contact = ({ className }) => {
   const [emailBody, setEmailBody] = useState('');
 
   const sendMail = (e) => {
-    window.location.href = `mailto:${'debnathkoushik605@gmail.com'}?subject=${encodeURIComponent(
-      `Enquiry on Rainbow Day Care - ${RECEPIENT_MAIL}`
+    window.location.href = `mailto:${RECEPIENT_MAIL}?subject=${encodeURIComponent(
+      `Enquiry on Rainbow Day Care - ${contact}`
     )}&body=${encodeURIComponent(emailBody)}`;
     e.preventDefault();
 

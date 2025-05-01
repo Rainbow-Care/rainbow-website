@@ -34,7 +34,7 @@ const Amenities = ({ className }) => {
       <div className='text-center py-2 mb-6 sticky top-0 md:w-full bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-col gap-[16px] h-fit overflow-y-scroll snap-y snap-mandatory md:flex-row md:flex-wrap md:justify-center lg:max-w-1/2 lg:justify-self-center'>
+      <div className='flex flex-col gap-[16px] md:mx-auto h-fit overflow-y-scroll snap-y snap-mandatory md:flex-row md:flex-wrap md:justify-center lg:max-w-1/2 lg:justify-self-center'>
         {AMENITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
             <div
