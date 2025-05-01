@@ -7,7 +7,9 @@ const TITLE = 'What Our Families Say About Us';
 const Reviews = ({ className }) => {
   return (
     <section className={cx('container mx-auto', className)}>
-      <h2 className='text-center md:text-left mb-8'>{TITLE}</h2>
+      <h2 className='text-center mb-8 max-w-[25ch] m-auto md:text-left mb-8'>
+        {TITLE}
+      </h2>
       <Carousel>
         {testimonials.map(({ name, relation, text }, index) => {
           return (
