@@ -34,9 +34,9 @@ const servicesData = [
 const Services = ({ className, data = servicesData }) => {
   return (
     <section className={className}>
-      <div className="container mx-auto">
-        <h2 className="text-center md:text-left">Care Tailored for You</h2>
-        <div className='grid grid-cols-3 gap-x-2 gap-y-12 mt-16'>
+      <div className='container mx-auto'>
+        <h2 className='text-center md:text-left'>Care Tailored for You</h2>
+        <div className='grid md:grid-cols-3 gap-x-2 gap-y-12 mt-16'>
           {data.map(({ icon, title, text }, idx) => (
             <ServiceCard
               key={`${idx}-{title}`}

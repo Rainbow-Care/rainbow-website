@@ -9,8 +9,7 @@ const DESCRIPTION =
 const Overview = ({ className }) => {
   return (
     <section className={cx(className, '')}>
-      <div className="container mx-auto">
-
+      <div className='container mx-auto'>
         <div class='flex flex-col md:flex-row mx-auto items-center md:items-start w-full'>
           <div class='flex flex-col md:w-1/2 self-center'>
             {/* Left half */}
@@ -19,11 +18,9 @@ const Overview = ({ className }) => {
               <p>{DESCRIPTION}</p>
               <span>
                 <Button
-                  props={{
-                    text: 'View gallery',
-                    textColorPrimary: true,
-                    backgroundPrimary: false,
-                  }}
+                  text='View gallery'
+                  textColorPrimary={true}
+                  backgroundPrimary={false}
                 ></Button>
               </span>
             </div>
