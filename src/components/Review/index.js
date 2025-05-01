@@ -1,23 +1,27 @@
 import useEmblaCarousel from 'embla-carousel-react';
-import Carousel, {
-  PrevButton,
-  NextButton,
-  usePrevNextButtons,
-} from '../Carousel';
+import cx from 'classnames';
+import Carousel from '../Carousel';
 import { testimonials } from './testimonials';
 
 const TITLE = 'What Our Families Say About Us';
 const Reviews = ({ className }) => {
   return (
-    <section className={className}>
-      <h2 className='text-center md:text-left'>{TITLE}</h2>
+    <section className={cx('container mx-auto', className)}>
+      <h2 className='text-center md:text-left mb-8'>{TITLE}</h2>
       <Carousel>
-        {testimonials.map(({ name, relation, text }) => {
+        {testimonials.map(({ name, relation, text }, index) => {
           return (
-            <div>
-              <p>{name}</p>
-              <p>{relation}</p>
-              <p>{text}</p>
+            <div
+              className='w-full bg-[#FFD96C] p-8 md:px-20 md:py-12'
+              key={index}
+            >
+              <p>
+                <span className='font-bold'>{name}</span>
+                <span className='block md:inline-block md:ml-2'>
+                  {relation}
+                </span>
+              </p>
+              <p className='whitespace-pre-wrap text-[#454545]'>{text}</p>
             </div>
           );
         })}

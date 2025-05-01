@@ -21,21 +21,18 @@
   --color-transparent: 'transparent';
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 body {
   color: var(--foreground);
   background: var(--background);
-  /*font-family: 'Instrument Sans', sans-serif;*/
-  font-family: var(--primary-font), sans-serif; /* Fallback to a sans-serif font */
   line-height: 1.5;
   color: #5a5a5a;
+  font-size: 1.25rem;
 }
+
+.body2 {
+  font-size: 1rem;
+}
+
 h1,
 h2,
 h3 {
@@ -60,7 +57,6 @@ h2 {
   line-height: 1;
   @apply font-medium md:font-bold;
   @apply md:text-5xl;
-
 }
 
 h3 {

@@ -9,10 +9,11 @@ import styles from './carousel.module.css';
 import useEmblaCarousel from 'embla-carousel-react';
 
 const Carousel = (props) => {
-  const { options, children } = props;
+  const { options, className, children } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  // const slideCount = Children.count(children);
 
-  const containerClasses = cx('container mx-auto', styles.embla);
+  const containerClasses = cx('container mx-auto', styles.embla__viewport);
 
   const {
     prevBtnDisabled,
@@ -20,26 +21,35 @@ const Carousel = (props) => {
     onPrevButtonClick,
     onNextButtonClick,
   } = usePrevNextButtons(emblaApi);
-  // <div className='embla__viewport' ref={emblaRef}></div>
-  //
   let slideIndex = 0;
   return (
-    <section className='embla'>
+    <section className={cx(styles.embla, 'md:relative', className)}>
       <div className={containerClasses} ref={emblaRef}>
         <div className={styles.embla__container}>
           {Children.map(children, (child) => (
-            <div className='embla__slide' key={slideIndex++}>
-              <div className='embla__slide__number'>{child}</div>
+            <div className={styles.embla__slide} key={slideIndex++}>
+              {child}
             </div>
           ))}
         </div>
       </div>
 
-      <div className='embla__controls'>
-        <div className='embla__buttons'>
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
+      <div
+        className={cx(
+          'static flex gap-x-16 justify-center',
+          'md:w-full md:justify-between md:absolute md:top-[150%] md:-mt-[50%]'
+        )}
+      >
+        <PrevButton
+          className='md:translate-x-[-48px]'
+          onClick={onPrevButtonClick}
+          disabled={prevBtnDisabled}
+        />
+        <NextButton
+          className='md:translate-x-[48px]'
+          onClick={onNextButtonClick}
+          disabled={nextBtnDisabled}
+        />
       </div>
     </section>
   );
