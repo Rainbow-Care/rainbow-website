@@ -7,10 +7,10 @@ const DETAILS =
 const Contact = ({ className }) => {
   return (
     <section className={cx(className, '')}>
-      <div className="container mx-auto">
-        <div className='flex gap-4'>
+      <div className='container mx-auto'>
+        <div className='flex flex-col md:flex-row gap-4'>
           {/* Left half */}
-          <div className='flex flex-col w-8/12 gap-4'>
+          <div className='flex flex-col w-full md:w-8/12 gap-4'>
             <h2>
               Connect with Us for{' '}
               <span className='text-colorPrimary'>Personalized Support</span>
@@ -19,7 +19,7 @@ const Contact = ({ className }) => {
           </div>
 
           {/* Right half */}
-          <div className='flex flex-col w-4/12 gap-4'>
+          <div className='flex flex-col w-full md:w-4/12 gap-4'>
             <input
               className='border rounded-md p-1'
               placeholder='Enter Email or Phone Number'
@@ -30,11 +30,10 @@ const Contact = ({ className }) => {
             ></textarea>
             <div>
               <Button
-                props={{
-                  text: 'Send',
-                  textColorPrimary: false,
-                  backgroundPrimary: true,
-                }}
+                className='w-full md:w-auto'
+                text='Send'
+                textColorPrimary={false}
+                backgroundPrimary={true}
               />
             </div>
           </div>
