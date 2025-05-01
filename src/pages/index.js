@@ -4,7 +4,7 @@ import TrustMarkers from '@/components/TrustMarkers';
 import MediaCoverage from '@/components/MediaCoverage';
 import Services from '@/components/Services';
 import ReasonToChoose from '@/components/ReasonToChoose';
-import Reviews from '@/components/Reviews';
+import Reviews from '@/components/Review';
 import Overview from '@/components/Overview';
 import Team from '@/components/Team';
 import Contact from '@/components/Contact';
