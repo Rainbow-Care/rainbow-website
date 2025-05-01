@@ -10,8 +10,8 @@ import Button from './Button';
 const navLinks = [
   { link: 'home', display: 'Home' },
   { link: 'gallery', display: 'Gallery' },
-  { link: 'patient_portal', display: 'Patient Portal' },
-  { link: 'about_us', display: 'About Us' },
+  // { link: 'patient_portal', display: 'Patient Portal' },
+  // { link: 'about_us', display: 'About Us' },
 ];
 
 const Navbar = () => {

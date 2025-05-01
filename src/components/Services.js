@@ -60,7 +60,7 @@ const ServiceCard = ({ icon, title, text }) => {
         alt={`${icon} icon`}
       />
       <h3>{title}</h3>
-      <p className='text-center text-base'>{text}</p>
+      <p className='text-center text-base  w-[28ch]'>{text}</p>
     </div>
   );
 };
