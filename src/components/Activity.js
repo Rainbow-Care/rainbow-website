@@ -1,6 +1,6 @@
 const TITLE = 'Our Activity';
 
-const AMENITIES_LIST = [
+const ACTIVITIES_LIST = [
   {
     imgSrc: '/images/amenities/AmenitiesImage1.jpg',
     caption: 'Retiring rooms for afternoon (Male members)',
@@ -101,19 +101,21 @@ const AMENITIES_LIST = [
 const Activity = ({ className }) => {
   return (
     <section className={className}>
-      <div className='justify-self-center mb-10'>
+      <div className='text-center mb-10 sticky top-0 w-full py-2 bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='grid grid-cols-3 gap-6'>
-        {AMENITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
+      <div className='flex flex-col md:grid md:grid-cols-3 lg:max-w-1/2 lg:justify-self-center gap-[16px]'>
+        {ACTIVITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
-            <div key={caption} className='w-[315px]'>
+            <div key={caption} className='md:flex md:flex-col'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`h-[48px] text-center rounded-b-md`}
-                style={{ backgroundColor: captionBackground }}
+                className={`md:grow font-bold text-[#000000] text-center rounded-b-md`}
+                style={{
+                  backgroundColor: captionBackground,
+                }}
               >
-                {caption}
+                <span>{caption}</span>
               </div>
             </div>
           );

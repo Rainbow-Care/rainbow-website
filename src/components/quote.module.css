@@ -1,0 +1,20 @@
+
+.before, .after{
+	position: relative;
+	display: inline-block;
+	width: 1px;
+	height: 1px;
+}
+
+.beforeIcon{
+	position: absolute;
+	top: -48px;
+	left: -30px;
+
+}
+
+.afterIcon{
+	position: absolute;
+	bottom: -30px;
+	left: -14px;
+}

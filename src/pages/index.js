@@ -9,19 +9,16 @@ import Overview from '@/components/Overview';
 import Team from '@/components/Team';
 import Questions from '@/components/Questions';
 import Contact from '@/components/Contact';
+import Questions from '@/components/Questions';
 
 export default function Home() {
   return (
-    <div className='container mx-auto pb-8 px-4'>
+    <div className='mx-auto pb-8 px-4'>
       <Navbar />
-      <main className='grid grid-cols-12 gap-4'>
-        <section className='col-span-12'>
-          <div className='w-full h-[450px] bg-gray-100'>
-            <HeroSection />
-          </div>
-        </section>
-        <TrustMarkers className='col-span-12' />
-        <MediaCoverage className='col-span-12 mt-20' />
+      <main>
+        <HeroSection />
+        <TrustMarkers className='' />
+        <MediaCoverage className='mt-20' />
         <Services className='col-span-12 mt-20' />
         <ReasonToChoose className='col-span-12 mt-20' />
         <Reviews className='col-span-12 mt-20' />

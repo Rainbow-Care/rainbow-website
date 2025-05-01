@@ -1,6 +1,6 @@
 import cx from 'classnames';
 
-import './styles.css';
+import styles from './styles.module.css';
 
 const trustMarkerData = [
   {
@@ -27,17 +27,20 @@ const TrustMarkers = ({
 }) => {
   return (
     <section className={cx(classNameFromProps, 'pt-20')}>
-      <div className='waves' style={{ width: '100%', height: '200px' }}></div>
-      <div className='flex gap-x-8 trustMarkers-wrapper'>
-        {Array.isArray(trustMarkerData)
-          ? data.map(({ value, text }, idx) => (
+      <div className={styles.waves} style={{ width: '100%', height: '200px' }}></div>
+
+      <div className={styles.trustMarkersWrapper}>
+        <div className="container mx-auto flex flex-col gap-y-8 md:flex-row md:gap-x-8 pb-8">
+          {Array.isArray(trustMarkerData)
+            ? data.map(({ value, text }, idx) => (
               <TrustMarkerCard
                 value={value}
                 text={text}
                 key={idx + ' ' + value}
               />
             ))
-          : null}
+            : null}
+        </div>
       </div>
     </section>
   );
@@ -45,7 +48,7 @@ const TrustMarkers = ({
 
 const TrustMarkerCard = ({ value, text }) => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col max-w-[180px] md:max-w-[250px] mx-auto'>
       <h2>{value}+</h2>
       <p className='text-md'>{text}</p>
     </div>
