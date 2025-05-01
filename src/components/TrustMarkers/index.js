@@ -26,19 +26,22 @@ const TrustMarkers = ({
   data = trustMarkerData,
 }) => {
   return (
-    <section className={cx(classNameFromProps, 'pt-20')}>
-      <div className={styles.waves} style={{ width: '100%', height: '200px' }}></div>
+    <section className={cx(classNameFromProps, 'pt-8')}>
+      <div
+        className={styles.waves}
+        style={{ width: '100%', height: '200px' }}
+      ></div>
 
       <div className={styles.trustMarkersWrapper}>
-        <div className="container mx-auto flex flex-col gap-y-8 md:flex-row md:gap-x-8 pb-8">
+        <div className='container mx-auto flex flex-col gap-y-8 md:flex-row md:gap-x-8 pb-8'>
           {Array.isArray(trustMarkerData)
             ? data.map(({ value, text }, idx) => (
-              <TrustMarkerCard
-                value={value}
-                text={text}
-                key={idx + ' ' + value}
-              />
-            ))
+                <TrustMarkerCard
+                  value={value}
+                  text={text}
+                  key={idx + ' ' + value}
+                />
+              ))
             : null}
         </div>
       </div>
