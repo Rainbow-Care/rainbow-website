@@ -12,7 +12,7 @@ const Reviews = ({ className }) => {
         {testimonials.map(({ name, relation, text }, index) => {
           return (
             <div
-              className='w-full bg-[#FFD96C] p-8 md:px-20 md:py-12'
+              className='w-full bg-[#FFD96C] rounded-2xl p-8 md:px-20 md:py-12'
               key={index}
             >
               <p>

@@ -31,10 +31,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right half */}
-      <div
-        style={{ aspectRatio: '650/450', overflow: 'hidden' }}
-        className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'
-      >
+      <div className='flex overflow-hidden aspect-[650/450] md:grow order-first'>
         <HeroImage />
       </div>
     </div>
