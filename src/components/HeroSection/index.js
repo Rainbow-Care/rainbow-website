@@ -10,7 +10,8 @@ const HeroSection = () => {
           <h1 className='font-light'>
             A place that makes our silver citizens happy
           </h1>
-          <p>
+
+          <p className='text-center w-[35ch] m-auto md:text-left'>
             Rainbow Daycare is a safe space designed for your elderly parents
             and wards to unwind, socialize and learn with their peers
           </p>

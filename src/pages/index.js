@@ -7,8 +7,8 @@ import ReasonToChoose from '@/components/ReasonToChoose';
 import Reviews from '@/components/Reviews';
 import Overview from '@/components/Overview';
 import Team from '@/components/Team';
-import Contact from '@/components/Contact';
 import Questions from '@/components/Questions';
+import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
