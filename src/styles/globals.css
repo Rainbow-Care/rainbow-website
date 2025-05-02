@@ -12,6 +12,7 @@
 
 :root {
   --primary-font: var(--font-instrument-sans);
+  --heading-font: var(--font-nib-pro-bold);
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -42,6 +43,7 @@ h3 {
 h1,
 h2 {
   font-family: 'Nib Pro';
+  font-family: var(--heading-font);
   font-weight: 600;
   @apply font-medium md:font-bold;
 }
@@ -60,7 +62,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Instrument Sans', sans-serif;
+  font-family: var(--primary-font);
   font-size: 1.125rem;
   line-height: 1.55;
   font-weight: 600;

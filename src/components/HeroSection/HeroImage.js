@@ -9,9 +9,9 @@ const imageList = [
   '/images/RainbowDayCareHeroSectionImage4.jpg',
 ];
 
-const HeroImage2 = () => {
+const HeroImage = () => {
   return (
-    <div className='flex gap-x-2 mx-auto'>
+    <div className='flex gap-x-2 mx-auto md:mx-0 md:ml-auto '>
       {/* left column images */}
       <div className='h-full md:max-h-[500px] flex flex-col gap-y-2 '>
         <div className='aspect-[310/230] ml-auto h-[60%] relative'>
@@ -63,8 +63,4 @@ const HeroImage2 = () => {
   );
 };
 
-export default HeroImage2;
-// <img src='/images/RainbowDayCareHeroSectionImage4.jpg' className="h-full object-contain rounded-md" />
-// <img src='/images/RainbowDayCareHeroSectionImage3.jpg' className="h-full object-scale-contain rounded-md" />
-// <img src='/images/RainbowDayCareHeroSectionImage1.jpg' className="h-full object-contain rounded-md" />
-// <img src='/images/RainbowDayCareHeroSectionImage2.jpg' className="h-full object-contain rounded-md" />
+export default HeroImage;
