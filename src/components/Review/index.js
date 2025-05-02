@@ -7,7 +7,7 @@ const TITLE = 'What Our Families Say About Us';
 const Reviews = ({ className }) => {
   return (
     <section className={cx('container mx-auto', className)}>
-      <h2 className='text-center mb-8 max-w-[25ch] m-auto md:text-left mb-8'>
+      <h2 className='mb-8 max-w-[25ch] mb-8 mx-auto md:mx-0 md:mr-auto'>
         {TITLE}
       </h2>
       <Carousel>
