@@ -1,18 +1,6 @@
 @import 'tailwindcss';
 
-@layer base {
-  font-face {
-    font-family: 'Nib Pro';
-    font-style: normal;
-    font-weight: 600;
-    font-display: swap;
-    src: url(/fonts/nibPro-bold.woff2);
-  }
-}
-
 :root {
-  --primary-font: var(--font-instrument-sans);
-  --heading-font: var(--font-nib-pro-bold);
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -25,13 +13,13 @@
 body {
   color: var(--foreground);
   background: var(--background);
+}
+
+.main-body {
   line-height: 1.5;
   color: #5a5a5a;
   font-size: 1.25rem;
-}
-
-.body2 {
-  font-size: 1rem;
+  font-family: var(--font-instrument-sans);
 }
 
 h1,
@@ -42,8 +30,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: 'Nib Pro';
-  font-family: var(--heading-font);
+  font-family: var(--font-nib-pro-bold);
   font-weight: 600;
   @apply font-medium md:font-bold;
 }
@@ -62,7 +49,7 @@ h2 {
 }
 
 h3 {
-  font-family: var(--primary-font);
+  font-family: var(--font-instrument-sans);
   font-size: 1.125rem;
   line-height: 1.55;
   font-weight: 600;
