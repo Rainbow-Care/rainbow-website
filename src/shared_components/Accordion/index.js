@@ -19,7 +19,7 @@ const Accordion = ({ list }) => {
 
         return (
           <div
-            className='flex flex-row border border-[#B3B3B3] rounded-lg  justify-between gap-8 bg-[#FCFCFC]'
+            className='flex flex-row border border-[#B3B3B3] rounded-lg  justify-between gap-2 md:gap-8 bg-[#FCFCFC]'
             key={index}
           >
             <div className='flex flex-col '>
