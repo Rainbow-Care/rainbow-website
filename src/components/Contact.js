@@ -23,26 +23,26 @@ const Contact = ({ className }) => {
   return (
     <section id='contact' className={cx(className, '')}>
       <div className='container mx-auto'>
-        <div className='flex flex-col md:flex-row gap-4'>
+        <div className='flex flex-col md:flex-row gap-6'>
           {/* Left half */}
-          <div className='flex flex-col w-full md:w-8/12 gap-4'>
-            <h2>
+          <div className='flex flex-col w-full md:w-7/12 gap-6'>
+            <h2 className='max-w-[20ch] md:max-w-[30ch]'>
               Connect with Us for{' '}
-              <span className='text-colorPrimary'>Personalized Support</span>
+              <span className='text-primary'>Personalized Support</span>
             </h2>
-            <p className='text-left'>{DETAILS}</p>
+            <p className='text-left max-w-[36ch] md:max-w-[60ch]'>{DETAILS}</p>
           </div>
 
           {/* Right half */}
-          <div className='flex flex-col w-full md:w-4/12 gap-4'>
+          <div className='flex flex-col w-full md:w-5/12 gap-4'>
             <input
-              className='border rounded-md py-1 px-2'
+              className='border rounded-md py-1 px-3'
               placeholder='Enter Email or Phone Number'
               value={contact}
               onChange={(e) => setContact(e.target.value)}
             ></input>
             <textarea
-              className='border rounded-md p-2 min-h-[112px]'
+              className='border rounded-md align-middle py-1 px-3 min-h-[112px]'
               placeholder='Write a message or question (if any)'
               value={emailBody}
               onChange={(e) => setEmailBody(e.target.value)}
