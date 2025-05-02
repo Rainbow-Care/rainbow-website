@@ -1,5 +1,6 @@
 import { Instrument_Sans } from 'next/font/google';
 import localFont from 'next/font/local';
+import cx from 'classnames';
 import '@/styles/globals.css';
 import Head from 'next/head';
 
@@ -9,13 +10,14 @@ const instrumentSans = Instrument_Sans({
   variable: '--font-instrument-sans', // Optional: Define a CSS variable
 });
 
-const myFont = localFont({
-  src: '../fonts/nibPro-bold.woff2',
+const nibProBold = localFont({
+  src: '../fonts/nibPro-bold.woff',
   display: 'swap',
   preload: true,
   variable: '--font-nib-pro-bold',
-  weight: '600',
 });
+
+console.log(instrumentSans, '', nibProBold);
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -23,8 +25,9 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <title>A place that makes our silver citizens happy</title>
       </Head>
-      <main className={instrumentSans.className}>
-        {' '}
+      <main
+        className={`${instrumentSans.variable} ${nibProBold.variable} main-body`}
+      >
         {/* Apply the font class here */}
         <Component {...pageProps} />
       </main>
