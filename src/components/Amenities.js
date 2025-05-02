@@ -39,11 +39,11 @@ const Amenities = ({ className }) => {
           return (
             <div
               key={caption}
-              className='snap-start snap-always md:flex md:flex-col md:w-1/4 lg:w-1/4'
+              className='snap-start snap-always md:flex md:flex-col md:max-w-[333px] lg:w-1/4'
             >
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`font-bold text-[#000000] text-center md:py-2 rounded-b-md md:grow`}
+                className={`font-medium text-[#000000] text-center rounded-b-md py-2 md:font-semibold md:grow`}
                 style={{ backgroundColor: captionBackground }}
               >
                 {caption}
