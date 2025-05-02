@@ -45,6 +45,12 @@ const TEAM_MEMBERS = [
     description:
       'Nivedita has completed her B.A. in Sanskrit and is a skilled beautician with 20 years of experience. Currently, she is studying Bach flower remedies and biochemic salts as supportive medicine therapies. She recently joined us at Rainbow, and works closely with Neha, assisting in exercise sessions by demonstrating the movements. In addition, she leads book reading activities, reading aloud to seniors. Always ready to help, she is fully active, with excellent observation skills that make her an invaluable part of the team.',
   },
+  {
+    memberName: 'Jayashree Bhure',
+    imgSrc: '/images/teamMembers/JayashreeBhure.png',
+    designation: 'Support Staff',
+    description: `Jayshree completed her B.Sc. and worked for 3-4 years as a social worker on projects related to child development and women's health at the residential level. She joined Rainbow Day Care Centre a year ago and enjoys leading memory games, fun activities, and puzzle-solving sessions with the seniors, who respond enthusiastically to her initiatives. She also conducts book reading sessions on occasion.`,
+  },
 ];
 
 const Team = ({ className }) => {
