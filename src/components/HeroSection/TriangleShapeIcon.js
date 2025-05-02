@@ -1,0 +1,26 @@
+import React from 'react';
+
+const TriangleShapeIcon = ({
+  height = '27',
+  width = '26',
+  fill = '#40C0E7',
+  className = '',
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 26 27'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className={className}
+    >
+      <path
+        d='M22.3054 5.29496C26.016 6.31782 27.2278 10.974 24.4867 13.676L12.7684 25.2272C10.0273 27.9293 5.38901 26.6507 4.41954 22.9258L0.275051 7.0018C-0.694421 3.27689 2.73199 -0.100666 6.44259 0.922201L22.3054 5.29496Z'
+        fill={fill}
+      />
+    </svg>
+  );
+};
+
+export default TriangleShapeIcon;
