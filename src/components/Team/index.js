@@ -83,6 +83,7 @@ const Team = ({ className }) => {
                       </div>
                       <div className='w-full text-center md:text-left text-black'>
                         <div className='w-full text-center md:text-left font-bold '>
+
                           {memberName}
                         </div>
                         {designation}
