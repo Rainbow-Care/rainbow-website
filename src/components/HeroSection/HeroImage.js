@@ -9,69 +9,61 @@ const imageList = [
   '/images/RainbowDayCareHeroSectionImage4.jpg',
 ];
 
-const HeroImage = () => {
+const HeroImage2 = () => {
   return (
-    <div className='grid grid-cols-3 gap-2'>
+    <div className='flex gap-x-2 mx-auto'>
       {/* left column images */}
-      <div className=' col-span-2 flex flex-col items-end gap-2 max-h-[28rem]'>
-        <div className='aspect-[310/230] grow h-[55%]'>
-          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Image
-              src='/images/RainbowDayCareHeroSectionImage1.jpg'
-              alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
-              objectFit='contain' //  Like object-contain in CSS
-              sizes='100%'
-              className='rounded-md'
-              fill
-            />
-          </div>
+      <div className='h-full md:max-h-[500px] flex flex-col gap-y-2 '>
+        <div className='aspect-[310/230] ml-auto h-[60%] relative'>
+          <Image
+            src='/images/RainbowDayCareHeroSectionImage1.jpg'
+            alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
+            objectFit='contain' //  Like object-contain in CSS
+            sizes='100%'
+            className='rounded-md'
+            fill
+          />
         </div>
-        <div className='aspect-[210/132] grow self-end flex justify-end w-3/5'>
-          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Image
-              src='/images/RainbowDayCareHeroSectionImage3.jpg'
-              alt='Rainbow Day Care'
-              sizes='100%'
-              objectFit='contain' // Changed from objectFit="scale-contain"
-              className='rounded-md'
-              fill
-            />
-          </div>
+        <div className='h-[30%] aspect-[560/390] relative ml-auto'>
+          <Image
+            src='/images/RainbowDayCareHeroSectionImage3.jpg'
+            alt='Rainbow Day Care'
+            sizes='100%'
+            objectFit='contain' // Changed from objectFit="scale-contain"
+            className='rounded-md'
+            fill
+          />
         </div>
       </div>
 
       {/* right column images */}
-      <div className='flex flex-col col-span-1 gap-2'>
-        <div className='aspect-[310/230] h-[45%]'>
-          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Image
-              src='/images/RainbowDayCareHeroSectionImage2.jpg'
-              alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
-              sizes='100%'
-              objectFit='contain' //  Like object-contain in CSS
-              className='rounded-md'
-              fill
-            />
-          </div>
+      <div className='w-auto h-full max-h-[450px] flex flex-col gap-y-2'>
+        <div className='aspect-[420/560] h-[45%] mr-auto relative'>
+          <Image
+            src='/images/RainbowDayCareHeroSectionImage2.jpg'
+            alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
+            sizes='100%'
+            objectFit='contain' //  Like object-contain in CSS
+            className='rounded-md'
+            fill
+          />
         </div>
-        <div className='aspect-[210/132] grow self-end flex justify-end max-w-[100%]'>
-          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Image
-              src='/images/RainbowDayCareHeroSectionImage4.jpg'
-              alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
-              sizes='100%'
-              objectFit='contain' //  Like object-contain in CSS
-              className='rounded-md w-[full] h-[full]'
-              fill
-            />
-          </div>
+        <div className='aspect-[420/480]  h-[45%]  mr-auto relative'>
+          <Image
+            src='/images/RainbowDayCareHeroSectionImage4.jpg'
+            alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
+            sizes='100%'
+            objectFit='contain' //  Like object-contain in CSS
+            className='rounded-md w-[full] h-[full]'
+            fill
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default HeroImage;
+export default HeroImage2;
 // <img src='/images/RainbowDayCareHeroSectionImage4.jpg' className="h-full object-contain rounded-md" />
 // <img src='/images/RainbowDayCareHeroSectionImage3.jpg' className="h-full object-scale-contain rounded-md" />
 // <img src='/images/RainbowDayCareHeroSectionImage1.jpg' className="h-full object-contain rounded-md" />

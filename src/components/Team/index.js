@@ -1,4 +1,4 @@
-import Quote from "@/components/Quote";
+import Quote from '@/components/Quote';
 
 const TITLE = 'Our Team at Rainbow';
 const teamBgColors = ['#ED6C30', '#D7598B', '#40C0E7', '#F3FFA4', '#FFD96C'];
@@ -48,37 +48,40 @@ const TEAM_MEMBERS = [
 ];
 
 const Team = ({ className }) => {
-
   return (
     <section className={className}>
-      <div className="container mx-auto">
+      <div className='container mx-auto'>
         <div className='flex flex-col gap-5'>
-          <h2>{TITLE}</h2>
+          <h2 className='mx-auto md:mx-0'>{TITLE}</h2>
           <div className='flex flex-col gap-16 md:gap-4 md:w-11/12'>
             {TEAM_MEMBERS.map(
               ({ memberName, imgSrc, designation, description }, index) => {
                 const imgBgColor = teamBgColors[index % teamBgColors.length];
                 return (
-                  <div key={memberName} className='flex  flex-col md:flex-row gap-y-8'>
+                  <div
+                    key={memberName}
+                    className='flex  flex-col md:flex-row gap-y-8'
+                  >
                     <div className='flex flex-col gap-4 place-items-center'>
-                      <div className="relative overflow-hidden w-[160px] md:w-[260px] px-1">
+                      <div className='relative overflow-hidden w-[160px] md:w-[260px] px-1'>
                         <img
                           src={imgSrc}
                           alt={memberName}
-                          className="z-[10] relative"
+                          className='z-[10] relative'
                           style={{ minWidth: '150px' }}
                         />
-                        <div className="absolute z-[5] bottom-0 left-0 w-full h-[9rem] md:h-[15rem] bg-blue-500 rounded-t-full" style={{ backgroundColor: `${imgBgColor}` }}></div>
-
+                        <div
+                          className='absolute z-[5] bottom-0 left-0 w-full h-[9rem] md:h-[15rem] bg-blue-500 rounded-t-full'
+                          style={{ backgroundColor: `${imgBgColor}` }}
+                        ></div>
                       </div>
-                      <div className="text-center">
+                      <div className='text-center'>
                         <div class='font-bold'>{memberName}</div>
                         {designation}
                       </div>
                     </div>
                     <div className='self-center mx-auto md:pl-[75px] text-center md:text-left'>
                       <Quote color={imgBgColor}>{description}</Quote>
-
                     </div>
                   </div>
                 );

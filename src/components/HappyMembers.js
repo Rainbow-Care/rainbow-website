@@ -44,7 +44,7 @@ const HappyMembers = ({ className }) => {
       <div className='text-center py-2 mb-6 sticky top-0 md:w-full bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-col md:grid md:grid-cols-3 lg:max-w-1/2 lg:justify-self-center gap-[16px] scroll-mt-[6] snap-y snap-start snap-always'>
+      <div className='flex flex-col md:mx-auto md:grid md:grid-cols-3 lg:max-w-1/2 lg:justify-self-center gap-[16px] scroll-mt-[6] snap-y snap-start snap-always'>
         {HAPPY_MEMBERS_LIST.map(
           ({ imgSrc, caption, captionBackground }, index) => {
             return (

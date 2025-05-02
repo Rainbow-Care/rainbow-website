@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import Link from 'next/link';
 
 import Button from './Button';
 
@@ -14,20 +15,26 @@ const Overview = ({ className }) => {
           <div class='flex flex-col md:w-1/2 self-center'>
             {/* Left half */}
             <div class='flex flex-col w-full md:w-3/4 gap-4'>
-              <h2 className='mb-5'>{TITLE}</h2>
+              <h2 className='mb-5 mx-auto md:mx-0'>{TITLE}</h2>
               <p>{DESCRIPTION}</p>
               <span>
-                <Button
-                  text='View gallery'
-                  textColorPrimary={true}
-                  backgroundPrimary={false}
-                ></Button>
+                <Link
+                  className='cursor-pointer'
+                  href={'/gallery'}
+                  aria-current='page'
+                >
+                  <Button
+                    text='View gallery'
+                    textColorPrimary={true}
+                    backgroundPrimary={false}
+                  />
+                </Link>
               </span>
             </div>
           </div>
 
           {/* Right half */}
-          <div class='flex flex-row w-1/2 h-[24rem] overflow-y-auto gap-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
+          <div class='flex flex-row w-1/2 h-[24rem] overflow-y-auto gap-2 mt-8 md:mt-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
             <div class='flex flex-col w-1/2 gap-2'>
               <div>
                 <img

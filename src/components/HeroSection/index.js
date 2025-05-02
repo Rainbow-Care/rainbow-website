@@ -11,7 +11,7 @@ const HeroSection = () => {
             A place that makes our silver citizens happy
           </h1>
 
-          <p className='text-center w-[35ch] m-auto md:text-left'>
+          <p className='text-center max-w-[35ch] md:w-[35ch] m-auto md:text-left'>
             Rainbow Daycare is a safe space designed for your elderly parents
             and wards to unwind, socialize and learn with their peers
           </p>
@@ -32,10 +32,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right half */}
-      <div
-        style={{ aspectRatio: '650/450', overflow: 'hidden' }}
-        className='grow grid grid-flow-col py-4 order-first md:max-w-[60%] md:order-last'
-      >
+      <div className='flex overflow-hidden aspect-[650/450] md:grow order-first'>
         <HeroImage />
       </div>
     </div>
