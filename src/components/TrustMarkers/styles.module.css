@@ -1,0 +1,18 @@
+.waves {
+  --mask: radial-gradient(254.91px at 50% 342px, #000 100%, #0000 100%)
+      calc(50% - 228px) 0/456px 100%,
+    radial-gradient(254.91px at 50% -228px, #0000 100%, #000 100%) 50% 114px/456px
+      100% repeat-x;
+  -webkit-mask: var(--mask);
+  mask: var(--mask);
+  background-color: #ffd96c;
+}
+
+.trustMarkersWrapper {
+  background: linear-gradient(
+    180deg,
+    #ffd96c 19.5%,
+    #ffe9a9 70.4%,
+    #ffffff 98.9%
+  );
+}

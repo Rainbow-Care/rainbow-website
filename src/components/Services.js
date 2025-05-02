@@ -34,16 +34,18 @@ const servicesData = [
 const Services = ({ className, data = servicesData }) => {
   return (
     <section className={className}>
-      <h2>Care Tailored for You</h2>
-      <div className='grid grid-cols-3 gap-x-2 gap-y-12 mt-16'>
-        {data.map(({ icon, title, text }, idx) => (
-          <ServiceCard
-            key={`${idx}-{title}`}
-            icon={icon}
-            title={title}
-            text={text}
-          />
-        ))}
+      <div className='container mx-auto'>
+        <h2 className='text-center md:text-left'>Care Tailored for You</h2>
+        <div className='grid md:grid-cols-3 gap-x-2 gap-y-12 mt-16'>
+          {data.map(({ icon, title, text }, idx) => (
+            <ServiceCard
+              key={`${idx}-{title}`}
+              icon={icon}
+              title={title}
+              text={text}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -58,7 +60,7 @@ const ServiceCard = ({ icon, title, text }) => {
         alt={`${icon} icon`}
       />
       <h3>{title}</h3>
-      <p className='text-center text-base'>{text}</p>
+      <p className='text-center text-base  max-w-[28ch]'>{text}</p>
     </div>
   );
 };

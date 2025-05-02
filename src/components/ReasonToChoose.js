@@ -5,10 +5,25 @@ const DESCRIPTION =
 const ReasonToChoose = ({ className }) => {
   return (
     <section className={className}>
-      <h2>{TITLE}</h2>
-      <div className='flex flex-col'>
-        <p>{DESCRIPTION}</p>
-        <div className='min-w min-h-48 bg-[#FFD96C]'>Conversation video</div>
+      <div className='container mx-auto'>
+        <h2 className='text-center mb-4 md:text-left'>{TITLE}</h2>
+        <div className='flex flex-col'>
+          <p className='text-center max-w-[33ch] m-auto'>{DESCRIPTION}</p>
+          <div className='min-h-[200px] mt-8 w-full mx-auto'>
+            <iframe
+              style={{
+                aspectRatio: '16 / 9',
+                width: '100%',
+              }}
+              src='https://www.youtube-nocookie.com/embed/9JV6FrDrbH8?si=uLwwtJh7bhvBH3Eu'
+              title='YouTube video player'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+              referrerpolicy='strict-origin-when-cross-origin'
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
     </section>
   );

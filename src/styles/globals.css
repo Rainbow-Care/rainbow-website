@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @layer base {
-  @font-face {
+  font-face {
     font-family: 'Nib Pro';
     font-style: normal;
     font-weight: 600;
@@ -15,24 +11,28 @@
 }
 
 :root {
+  --primary-font: var(--font-instrument-sans);
   --background: #ffffff;
   --foreground: #171717;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+@theme {
+  --color-primary: #1e85a2;
+  --color-secondary: #ffffff;
+  --color-transparent: 'transparent';
+}
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Instrument Sans', sans-serif;
   line-height: 1.5;
   color: #5a5a5a;
+  font-size: 1.25rem;
 }
+
+.body2 {
+  font-size: 1rem;
+}
+
 h1,
 h2,
 h3 {
@@ -43,16 +43,20 @@ h1,
 h2 {
   font-family: 'Nib Pro';
   font-weight: 600;
+  @apply font-medium md:font-bold;
 }
 
 h1 {
-  font-size: 2.65rem;
+  font-size: 1.75rem;
   line-height: 1.19;
+  @apply md:text-5xl;
 }
 
 h2 {
-  font-size: 2.15rem;
+  font-size: 1.5rem;
   line-height: 1;
+  @apply font-medium md:font-bold;
+  @apply md:text-5xl;
 }
 
 h3 {
