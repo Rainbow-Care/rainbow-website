@@ -32,7 +32,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right half */}
-      <div className='flex aspect-[650/450] md:grow order-first'>
+      <div className='flex aspect-[650/450] md:grow order-first pr-[56px] pb-4 pl-[48px]'>
         <HeroImage />
       </div>
     </div>
