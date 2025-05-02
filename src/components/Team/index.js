@@ -66,7 +66,7 @@ const Team = ({ className }) => {
                 return (
                   <div
                     key={memberName}
-                    className='flex  flex-col md:flex-row gap-y-8'
+                    className='flex flex-col md:flex-row gap-y-8'
                   >
                     <div className='flex flex-col gap-4 place-items-center'>
                       <div className='relative overflow-hidden w-[160px] md:w-[260px] px-1'>
@@ -81,8 +81,10 @@ const Team = ({ className }) => {
                           style={{ backgroundColor: `${imgBgColor}` }}
                         ></div>
                       </div>
-                      <div className='text-center'>
-                        <div class='font-bold'>{memberName}</div>
+                      <div className='w-full text-center md:text-left'>
+                        <div className='w-full text-center md:text-left font-bold'>
+                          {memberName}
+                        </div>
                         {designation}
                       </div>
                     </div>
