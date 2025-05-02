@@ -16,7 +16,7 @@ const HeroSection = () => {
             and wards to unwind, socialize and learn with their peers
           </p>
         </div>
-        <div className='h-fit flex-row gap-x-8 mt-8 justify-center flex'>
+        <div className='h-fit flex-row gap-x-8 mt-8 justify-center flex hidden'>
           <Button
             text='Schedule an appointment'
             textColorPrimary={false}
