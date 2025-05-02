@@ -11,15 +11,22 @@
 }
 
 body {
-  color: var(--foreground);
+  color: #000;
   background: var(--background);
 }
 
 .main-body {
-  line-height: 1.5;
   color: #5a5a5a;
+  line-height: 1.5;
   font-size: 1.25rem;
   font-family: var(--font-instrument-sans);
+}
+
+.body1 {
+  @apply text-lg;
+}
+.body2 {
+  @apply text-base;
 }
 
 h1,
@@ -43,7 +50,6 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  line-height: 1;
   @apply font-medium md:font-bold;
   @apply md:text-4xl;
 }

@@ -25,16 +25,16 @@ const Contact = ({ className }) => {
       <div className='container mx-auto'>
         <div className='flex flex-col md:flex-row gap-6'>
           {/* Left half */}
-          <div className='flex flex-col w-full md:w-7/12 gap-6'>
-            <h2 className='max-w-[20ch] md:max-w-[30ch]'>
+          <div className='flex flex-col w-full  gap-6'>
+            <h2 className='max-w-[20ch] md:max-w-[30ch] leading-[1.5]'>
               Connect with Us for{' '}
               <span className='text-primary'>Personalized Support</span>
             </h2>
-            <p className='text-left max-w-[36ch] md:max-w-[60ch]'>{DETAILS}</p>
+            <p className='text-left  md:max-w-[60ch]'>{DETAILS}</p>
           </div>
 
           {/* Right half */}
-          <div className='flex flex-col w-full md:w-5/12 gap-4'>
+          <div className='flex flex-col w-full  gap-4'>
             <input
               className='border rounded-md py-1 px-3'
               placeholder='Enter Email or Phone Number'

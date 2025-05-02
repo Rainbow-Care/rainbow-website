@@ -81,8 +81,8 @@ const Team = ({ className }) => {
                           style={{ backgroundColor: `${imgBgColor}` }}
                         ></div>
                       </div>
-                      <div className='w-full text-center md:text-left'>
-                        <div className='w-full text-center md:text-left font-bold'>
+                      <div className='w-full text-center md:text-left text-black'>
+                        <div className='w-full text-center md:text-left font-bold '>
                           {memberName}
                         </div>
                         {designation}
