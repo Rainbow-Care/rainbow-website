@@ -110,7 +110,7 @@ const Activity = ({ className }) => {
             <div key={caption} className='md:flex md:flex-col'>
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`md:grow font-bold text-[#000000] text-center rounded-b-md`}
+                className={`font-medium text-[#000000] text-center py-2 rounded-b-md md:grow md:font-semibold`}
                 style={{
                   backgroundColor: captionBackground,
                 }}
