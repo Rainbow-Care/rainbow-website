@@ -9,6 +9,7 @@ import Overview from '@/components/Overview';
 import Team from '@/components/Team';
 import Questions from '@/components/Questions';
 import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Team className='col-span-12 mt-20' />
         <Questions className='col-span-12 mt-20' />
         <Contact className='col-span-12 mt-20' />
+        <Footer className='col-span-12 mt-20' />
       </main>
     </div>
   );
