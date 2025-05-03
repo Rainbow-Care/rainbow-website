@@ -41,13 +41,15 @@ const Footer = ({ className }) => {
             <div className='flex flex-col gap-4 md:mt-1 md:gap-4'>
               <div className='font-bold'>Socials</div>
               <div className='flex flex-row gap-4 md:flex-col md:gap-4'>
-                {/* <Link
-                  href={``}
+                <Link
+                  href={`https://www.facebook.com/profile.php?id=100063690924204`}
+                  rel='noopener noreferrer'
+                  target='_blank'
                   className='-translate-x-[8px]'
                   aria-current='page'
                 >
                   <img src='/images/facebook.svg' alt='Facebook link'></img>
-                </Link> */}
+                </Link>
                 <Link
                   href={`https://www.instagram.com/rainbowbycfare/`}
                   rel='noopener noreferrer'
