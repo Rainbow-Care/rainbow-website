@@ -7,7 +7,7 @@ const links = [
   { link: 'contact_us', display: 'Contact Us' },
 ];
 
-const text = 'Rainbow day care centre. All rights reserved 2025';
+const TEXT = 'Rainbow day care centre. All rights reserved 2025';
 
 const Footer = ({ className }) => {
   return (
@@ -41,23 +41,28 @@ const Footer = ({ className }) => {
             <div className='flex flex-col gap-4 md:mt-1 md:gap-4'>
               <div className='font-bold'>Socials</div>
               <div className='flex flex-row gap-4 md:flex-col md:gap-4'>
-                <Link
+                {/* <Link
                   href={``}
                   className='-translate-x-[8px]'
                   aria-current='page'
                 >
                   <img src='/images/facebook.svg' alt='Facebook link'></img>
-                </Link>
-                <Link href={``} aria-current='page'>
+                </Link> */}
+                <Link
+                  href={`https://www.instagram.com/rainbowbycfare/`}
+                  rel='noopener noreferrer'
+                  target='_blank'
+                  aria-current='page'
+                >
                   <img src='/images/instagram.svg' alt='Instagram link'></img>
                 </Link>
-                <Link
+                {/* <Link
                   href={``}
                   className='translate-x-[8px] md:translate-x-[1px] md:-translate-y-[4px]'
                   aria-current='page'
                 >
                   <img src='/images/youtube.svg' alt='Youtube link'></img>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -81,7 +86,7 @@ const Footer = ({ className }) => {
                   fill='black'
                 />
               </svg>
-              <div className='self-center font-medium'>{text}</div>
+              <div className='self-center font-medium'>{TEXT}</div>
             </div>
           </div>
         </div>
