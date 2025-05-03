@@ -5,13 +5,13 @@ const HeroSection = () => {
   return (
     <div className='flex flex-col md:flex-row gap-x-4 container mx-auto md:max-h-[450px]'>
       {/* Left half */}
-      <div className='flex flex-col justify-center  order-last md:order-first'>
-        <div className='md:max-w-[380px] text-center md:text-left'>
+      <div className='flex flex-col md:max-w-[33%] lg:max-w-[45%] justify-center  order-last mt-12 md:mt-4 md:order-first'>
+        <div className='text-center md:text-left'>
           <h1 className='font-light'>
             A place that makes our silver citizens happy
           </h1>
 
-          <p className='text-center max-w-[35ch] md:w-[35ch] m-auto md:text-left'>
+          <p className='m-auto text-base md:text-xl mt-4'>
             Rainbow Daycare is a safe space designed for your elderly parents
             and wards to unwind, socialize and learn with their peers
           </p>
@@ -32,7 +32,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right half */}
-      <div className='flex overflow-hidden aspect-[650/450] md:grow order-first'>
+      <div className='flex aspect-[650/450] md:grow order-first pr-[56px] pb-4 pl-[48px]'>
         <HeroImage />
       </div>
     </div>

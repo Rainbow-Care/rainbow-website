@@ -7,7 +7,6 @@
   border-width: 0 2px 2px 0;
   display: inline-block;
   min-height: 8px;
-  cursor: pointer;
   transform: translateY(-2px) rotate(45deg);
   min-width: 8px;
 }

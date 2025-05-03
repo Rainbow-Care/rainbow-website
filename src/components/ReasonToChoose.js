@@ -8,7 +8,9 @@ const ReasonToChoose = ({ className }) => {
       <div className='container mx-auto'>
         <h2 className='text-center mb-4 md:text-left'>{TITLE}</h2>
         <div className='flex flex-col'>
-          <p className='text-center max-w-[33ch] m-auto'>{DESCRIPTION}</p>
+          <p className=' mx-auto md:mx-0 md:mr-auto text-center md:text-left'>
+            {DESCRIPTION}
+          </p>
           <div className='min-h-[200px] mt-8 w-full mx-auto'>
             <iframe
               style={{
