@@ -7,12 +7,12 @@ const links = [
   { link: 'contact_us', display: 'Contact Us' },
 ];
 
-const TEXT = 'Rainbow day care centre. All rights reserved 2025';
+const TEXT = `Rainbow day care centre. All rights reserved ${new Date().getFullYear()}`;
 
 const Footer = ({ className }) => {
   return (
     <section className={cx(className, '')}>
-      <div className='w-full p-2 bg-[#ffd96c4d]'>
+      <div className='w-full p-2 bg-[#ffd96c4d] rounded-b-lg'>
         <div className='container mx-auto flex flex-col gap-6 md:flex-row md:mt-4 md:justify-between'>
           {/* For medium screen and above */}
           <div className='flex flex-col gap-4 md:flex-row md:gap-8'>
