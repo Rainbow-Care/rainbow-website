@@ -34,16 +34,16 @@ const Amenities = ({ className }) => {
       <div className='text-center py-2 mb-6 sticky top-0 md:w-full bg-white'>
         <h2>{TITLE}</h2>
       </div>
-      <div className='flex flex-col gap-[16px] md:mx-auto h-fit overflow-y-scroll snap-y snap-mandatory md:flex-row md:flex-wrap md:justify-center lg:max-w-1/2 lg:justify-self-center'>
+      <div className='flex flex-col gap-[16px]  md:flex-row md:flex-wrap'>
         {AMENITIES_LIST.map(({ imgSrc, caption, captionBackground }) => {
           return (
             <div
               key={caption}
-              className='snap-start snap-always md:flex md:flex-col md:max-w-[333px] lg:w-1/4'
+              className='snap-start snap-always md:flex md:flex-col md:w-2/7'
             >
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`font-medium text-[#000000] text-center rounded-b-md py-2 md:font-semibold md:grow`}
+                className={`font-medium text-[#000000] text-center rounded-b-md py-2 md:font-semibold `}
                 style={{ backgroundColor: captionBackground }}
               >
                 {caption}
@@ -51,6 +51,7 @@ const Amenities = ({ className }) => {
             </div>
           );
         })}
+        {/* </div> */}
       </div>
     </section>
   );
