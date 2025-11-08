@@ -7,15 +7,15 @@ const TITLE = 'Life at Rainbow';
 
 const Gallery = () => {
   return (
-    <div className='flex flex-col'>
+    <div className='flex flex-col pb-8 px-4'>
       <Navbar />
       <main className='flex flex-col'>
         <div className='text-center mt-10'>
           <h1>{TITLE}</h1>
         </div>
-        <Amenities className='col-span-12 mx-[16px] mt-20' />
-        <Activity className='col-span-12 mx-[16px] mt-20' />
-        <HappyMembers className='col-span-12 mx-[16px] mt-20' />
+        <Amenities className='md:container md:mx-auto col-span-12 mx-[16px] mt-20' />
+        <Activity className='md:container md:mx-auto col-span-12 mx-[16px] mt-20' />
+        <HappyMembers className='md:container md:mx-auto col-span-12 mx-[16px] mt-20' />
       </main>
     </div>
   );
