@@ -10,8 +10,6 @@ import Button from './Button';
 const navLinks = [
   { link: 'home', display: 'Home' },
   { link: 'gallery', display: 'Gallery' },
-  // { link: 'patient_portal', display: 'Patient Portal' },
-  // { link: 'about_us', display: 'About Us' },
 ];
 
 const Navbar = () => {
@@ -22,9 +20,6 @@ const Navbar = () => {
     const element = document.getElementById('contact');
     element?.scrollIntoView({ behavior: 'smooth' });
   };
-
-  //console.log(window.location.pathname); //yields: "/js" (where snippets run)
-  //console.log(window.location.href);
 
   return (
     <nav class='bg-white border-gray-200'>
@@ -102,18 +97,29 @@ const Navbar = () => {
                 <li key={link}>
                   <Link
                     href={`/${link === 'home' ? '' : link}`}
-                    className='block py-2 px-3 rounded md:bg-transparent md:p-0'
+                    className={`${
+                      pathname === `/${link}` ? 'text-[#1e85a2] font-bold' : ''
+                    } block py-2 px-3 rounded md:bg-transparent md:p-0`}
                     aria-current='page'
                   >
-                    <span
-                      className={
-                        pathname === '/' + link
-                          ? 'text-red underline decoration-3'
-                          : ''
-                      }
-                    >
-                      {display}
-                    </span>
+                    {display}
+                    {pathname === `/${link}` && (
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='auto'
+                        height='4'
+                        className='absolute'
+                        viewBox='0 0 auto 4'
+                        fill='none'
+                      >
+                        <path
+                          d={`M2 2 H${display.length * 7}`}
+                          stroke='#1e85a2'
+                          stroke-width='3'
+                          stroke-linecap='round'
+                        />
+                      </svg>
+                    )}
                   </Link>
                 </li>
               ))}
