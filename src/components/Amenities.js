@@ -43,7 +43,7 @@ const Amenities = ({ className }) => {
             >
               <img src={imgSrc} alt={caption} className='rounded-t-md' />
               <div
-                className={`font-medium text-[#000000] text-center rounded-b-md py-2 md:font-semibold `}
+                className={`font-semibold text-[#000000] text-center rounded-b-md py-2 md:grow md:text-base`}
                 style={{ backgroundColor: captionBackground }}
               >
                 {caption}
