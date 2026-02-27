@@ -9,6 +9,7 @@ import Button from './Button';
 
 const navLinks = [
   { link: 'home', display: 'Home' },
+  { link: 'opd', display: 'OPD Service' },
   { link: 'gallery', display: 'Gallery' },
 ];
 
@@ -113,7 +114,7 @@ const Navbar = () => {
                         fill='none'
                       >
                         <path
-                          d={`M2 2 H${display.length * 7}`}
+                          d={`M2 2 H${display.length * 8}`}
                           stroke='#1e85a2'
                           stroke-width='3'
                           stroke-linecap='round'
