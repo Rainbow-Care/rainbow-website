@@ -7,9 +7,7 @@ const HeroSection = () => {
       {/* Left half */}
       <div className='flex flex-col md:max-w-[33%] lg:max-w-[45%] justify-center  order-last mt-12 md:mt-4 md:order-first'>
         <div className='text-center md:text-left'>
-          <h1 className='font-light'>
-            A place that makes our silver citizens happy
-          </h1>
+          <h1>A place that makes our silver citizens happy</h1>
 
           <p className='m-auto text-base md:text-xl mt-4'>
             Rainbow Daycare is a safe space designed for your elderly parents
