@@ -16,11 +16,13 @@ export default function Footer() {
           <p className='font-bold'>{'Call Us'}</p>
           <p className='text-[#1E85A2] font-bold'>{'8605003575'}</p>
         </div>
-        <div className='flex gap-2'>
-          <img className='my-auto h-6' src='/images/sobati/Location.svg' />
-          <p className='font-bold'>{'Visit Us'}</p>
+        <div className='flex gap-2 flex-col'>
+          <div className='flex gap-2 mx-auto'>
+            <img className='my-auto h-6' src='/images/sobati/Location.svg' />
+            <p className='font-bold'>{'Visit Us'}</p>
+          </div>
           <p className='text-[#1E85A2] font-bold'>
-            {'Rainbow Day Care, Khotrud'}
+            {'Rainbow Day Care, Kothrud'}
           </p>
         </div>
       </div>
