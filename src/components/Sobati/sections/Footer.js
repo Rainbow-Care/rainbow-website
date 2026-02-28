@@ -2,7 +2,10 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div className='flex flex-col items-center gap-8 pt-32 px-4 pb-16'>
+    <div
+      id='sobati-footer'
+      className='flex flex-col items-center gap-8 pt-32 px-4 pb-16'
+    >
       <div className='flex flex-col items-center'>
         <h2>Schedule an Appointment</h2>
         <p className='text-center'>
