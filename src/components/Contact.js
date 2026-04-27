@@ -1,3 +1,5 @@
+'use client';
+
 import cx from 'classnames';
 import Button from './Button';
 import { useState } from 'react';
@@ -35,14 +37,18 @@ const Contact = ({ className }) => {
 
           {/* Right half */}
           <div className='flex flex-col w-full  gap-4'>
+            <label htmlFor='contact-info' className='sr-only'>Email or Phone Number</label>
             <input
-              className='border rounded-md py-1 px-3'
+              id='contact-info'
+              className='border rounded-md py-1 px-3 w-full max-w-full'
               placeholder='Enter Email or Phone Number'
               value={contact}
               onChange={(e) => setContact(e.target.value)}
-            ></input>
+            />
+            <label htmlFor='contact-message' className='sr-only'>Message or question</label>
             <textarea
-              className='border rounded-md align-middle py-1 px-3 min-h-[112px]'
+              id='contact-message'
+              className='border rounded-md align-middle py-1 px-3 min-h-[112px] w-full max-w-full'
               placeholder='Write a message or question (if any)'
               value={emailBody}
               onChange={(e) => setEmailBody(e.target.value)}

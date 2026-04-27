@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import cx from 'classnames';
 import Link from 'next/link';
 
@@ -11,10 +12,10 @@ const Overview = ({ className }) => {
   return (
     <section className={cx(className, '')}>
       <div className='container mx-auto'>
-        <div class='flex flex-col md:flex-row mx-auto items-center md:items-start w-full'>
-          <div class='flex flex-col md:w-1/2 self-center'>
+        <div className='flex flex-col md:flex-row mx-auto items-center md:items-start w-full'>
+          <div className='flex flex-col md:w-1/2 self-center'>
             {/* Left half */}
-            <div class='flex flex-col w-full md:w-3/4 gap-4'>
+            <div className='flex flex-col w-full md:w-3/4 gap-4'>
               <h2 className='mb-5 mx-auto md:mx-0'>{TITLE}</h2>
               <p>{DESCRIPTION}</p>
               <Link
@@ -32,48 +33,66 @@ const Overview = ({ className }) => {
           </div>
 
           {/* Right half */}
-          <div class='flex flex-row md:w-1/2 h-[24rem] overflow-y-auto gap-4 mt-8 md:mt-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
-            <div class='flex flex-col w-1/2 gap-4'>
+          <div className='flex flex-row md:w-1/2 h-[24rem] overflow-y-auto gap-4 mt-8 md:mt-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]'>
+            <div className='flex flex-col w-1/2 gap-4'>
               <div>
-                <img
-                  src='/images/RainbowDayCareHeroSectionImage1.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/RainbowDayCareHeroSectionImage1.webp'
+                  alt='Elderly residents enjoying art and craft at Rainbow Day Care'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
 
               <div>
-                <img
-                  src='/images/RainbowDayCareHeroSectionImage4.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/RainbowDayCareHeroSectionImage4.webp'
+                  alt='Seniors socialising in the garden at Rainbow Day Care Centre'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
 
               <div>
-                <img
-                  src='/images/RainbowDayCareHeroSectionImage3.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/RainbowDayCareHeroSectionImage3.webp'
+                  alt='Group of senior citizens playing a game together'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
             </div>
-            <div class='flex flex-col w-1/2 gap-4'>
+            <div className='flex flex-col w-1/2 gap-4'>
               <div>
-                <img
-                  src='/images/RainbowDayCareHeroSectionImage2.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/RainbowDayCareHeroSectionImage2.webp'
+                  alt='Elderly woman smiling during a day care activity'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
 
               <div>
-                <img
-                  src='/images/amenities/AmenitiesImage3.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/amenities/AmenitiesImage3.webp'
+                  alt='Comfortable resting area and amenities for seniors'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
 
               <div>
-                <img
-                  src='/images/amenities/AmenitiesImage5.jpg'
-                  alt='Logo of Rainbow Day Care'
+                <Image
+                  src='/images/amenities/AmenitiesImage5.webp'
+                  alt='Spacious activity hall at Rainbow Day Care Centre'
+                  width={400}
+                  height={300}
+                  className='w-full h-auto'
                 />
               </div>
             </div>
