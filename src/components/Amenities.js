@@ -1,28 +1,30 @@
+import Image from 'next/image';
+
 const TITLE = 'Our Amenities';
 
 const AMENITIES_LIST = [
   {
-    imgSrc: '/images/amenities/AmenitiesImage3.jpg',
+    imgSrc: '/images/amenities/AmenitiesImage3.webp',
     caption: 'Outdoor space for relaxation and activities',
     captionBackground: '#D7598B',
   },
   {
-    imgSrc: '/images/amenities/AmenitiesImage2.jpg',
+    imgSrc: '/images/amenities/AmenitiesImage2.webp',
     caption: 'Hall room for dining and activities',
     captionBackground: '#ED6C30',
   },
   {
-    imgSrc: '/images/amenities/AmenitiesImage5.jpg',
+    imgSrc: '/images/amenities/AmenitiesImage5.webp',
     caption: 'Rainbow kitchen',
     captionBackground: '#F3FFA4',
   },
   {
-    imgSrc: '/images/amenities/AmenitiesImage1.jpg',
+    imgSrc: '/images/amenities/AmenitiesImage1.webp',
     caption: 'Retiring rooms for afternoon (Male members)',
     captionBackground: '#FFD96C',
   },
   {
-    imgSrc: '/images/amenities/AmenitiesImage4.jpg',
+    imgSrc: '/images/amenities/AmenitiesImage4.webp',
     caption: 'Retiring rooms for afternoon (Female members)',
     captionBackground: '#40C0E7',
   },
@@ -41,7 +43,7 @@ const Amenities = ({ className }) => {
               key={caption}
               className='snap-start snap-always md:flex md:flex-col md:w-2/7'
             >
-              <img src={imgSrc} alt={caption} className='rounded-t-md' />
+              <Image src={imgSrc} alt={caption} width={800} height={600} className='w-full h-auto rounded-t-md' />
               <div
                 className={`font-semibold text-[#000000] text-center rounded-b-md py-2 md:grow md:text-base`}
                 style={{ backgroundColor: captionBackground }}

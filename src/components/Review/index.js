@@ -23,7 +23,7 @@ const Reviews = ({ className }) => {
                   {relation}
                 </span>
               </p>
-              <p className='whitespace-pre-wrap text-[#454545]'>{text}</p>
+              <p className='whitespace-pre-wrap text-[#454545]' lang={['Swati Deshpande', 'Amarendra Kulkarni', 'Anand Devasthali'].includes(name) ? 'mr' : 'en'}>{text}</p>
             </div>
           );
         })}

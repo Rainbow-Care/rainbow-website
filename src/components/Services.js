@@ -1,7 +1,7 @@
 const servicesData = [
   {
     icon: 'activity',
-    title: 'Daily Activites',
+    title: 'Daily Activities',
     text: 'Engaging routines that enrich the lives of our participants every day.',
   },
   {
@@ -39,7 +39,7 @@ const Services = ({ className, data = servicesData }) => {
         <div className='grid md:grid-cols-3 gap-x-2 gap-y-12 mt-16'>
           {data.map(({ icon, title, text }, idx) => (
             <ServiceCard
-              key={`${idx}-{title}`}
+              key={`${idx}-${title}`}
               icon={icon}
               title={title}
               text={text}

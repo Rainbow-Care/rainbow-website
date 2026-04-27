@@ -4,10 +4,10 @@ import cn from 'classnames';
 import TriangleShapeIcon from './TriangleShapeIcon';
 
 const imageList = [
-  '/images/RainbowDayCareHeroSectionImage1.jpg',
-  '/images/RainbowDayCareHeroSectionImage3.jpg',
-  '/images/RainbowDayCareHeroSectionImage2.jpg',
-  '/images/RainbowDayCareHeroSectionImage4.jpg',
+  '/images/RainbowDayCareHeroSectionImage1.webp',
+  '/images/RainbowDayCareHeroSectionImage3.webp',
+  '/images/RainbowDayCareHeroSectionImage2.webp',
+  '/images/RainbowDayCareHeroSectionImage4.webp',
 ];
 
 const HeroImage = () => {
@@ -20,9 +20,9 @@ const HeroImage = () => {
             <TriangleShapeIcon className='w-[20px] h-[20px] rotate-[10deg]' />
           </div>
           <Image
-            src='/images/RainbowDayCareHeroSectionImage1.jpg'
+            src='/images/RainbowDayCareHeroSectionImage1.webp'
             alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
-            objectFit='contain' //  Like object-contain in CSS
+            style={{ objectFit: 'contain' }} //  Like object-contain in CSS
             sizes='100%'
             className='rounded-md'
             fill
@@ -37,10 +37,10 @@ const HeroImage = () => {
 
         <div className='h-[30%] aspect-[560/390] relative ml-auto'>
           <Image
-            src='/images/RainbowDayCareHeroSectionImage3.jpg'
+            src='/images/RainbowDayCareHeroSectionImage3.webp'
             alt='Rainbow Day Care'
             sizes='100%'
-            objectFit='contain' // Changed from objectFit="scale-contain"
+            style={{ objectFit: 'contain' }} // Changed from objectFit="scale-contain"
             className='rounded-md'
             fill
           />
@@ -69,10 +69,10 @@ const HeroImage = () => {
             />
           </div>
           <Image
-            src='/images/RainbowDayCareHeroSectionImage2.jpg'
+            src='/images/RainbowDayCareHeroSectionImage2.webp'
             alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
             sizes='100%'
-            objectFit='contain' //  Like object-contain in CSS
+            style={{ objectFit: 'contain' }} //  Like object-contain in CSS
             className='rounded-md'
             fill
           />
@@ -85,10 +85,10 @@ const HeroImage = () => {
         </div>
         <div className='aspect-[420/480]  h-[45%]  mr-auto relative'>
           <Image
-            src='/images/RainbowDayCareHeroSectionImage4.jpg'
+            src='/images/RainbowDayCareHeroSectionImage4.webp'
             alt='Rainbow Day Care' // **Crucial: Add alt text for accessibility**
             sizes='100%'
-            objectFit='contain' //  Like object-contain in CSS
+            style={{ objectFit: 'contain' }} //  Like object-contain in CSS
             className='rounded-md w-[full] h-[full]'
             fill
           />

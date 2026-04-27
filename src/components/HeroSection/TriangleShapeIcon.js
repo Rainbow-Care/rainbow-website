@@ -8,6 +8,8 @@ const TriangleShapeIcon = ({
 }) => {
   return (
     <svg
+      aria-hidden='true'
+      focusable='false'
       width={width}
       height={height}
       viewBox='0 0 26 27'

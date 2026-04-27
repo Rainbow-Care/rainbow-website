@@ -77,6 +77,8 @@ const Footer = ({ className }) => {
             />
             <div className='flex flex-row text-xs pb-2 md:pb-0'>
               <svg
+                aria-hidden='true'
+                focusable='false'
                 xmlns='http://www.w3.org/2000/svg'
                 width='16'
                 height='16'

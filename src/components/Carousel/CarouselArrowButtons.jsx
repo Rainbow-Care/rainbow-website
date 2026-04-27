@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useCallback, useEffect, useState } from 'react';
 import cx from 'classnames';
 import ChevronRight from './ChevronRight';
@@ -12,8 +14,6 @@ export const usePrevNextButtons = (emblaApi) => {
   }, [emblaApi]);
 
   const onNextButtonClick = useCallback(() => {
-    console.log('next button called');
-
     if (!emblaApi) return;
     emblaApi.scrollNext();
   }, [emblaApi]);
@@ -24,7 +24,6 @@ export const usePrevNextButtons = (emblaApi) => {
   }, []);
 
   useEffect(() => {
-    console.log('useeffect called ', emblaApi);
     if (!emblaApi) return;
 
     onSelect(emblaApi);
