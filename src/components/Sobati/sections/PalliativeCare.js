@@ -2,18 +2,18 @@ import React from 'react';
 
 export default function PalliativeCare() {
   return (
-    <div className='flex flex-col gap-4 bg-[#FFFFFF] p-16 mx-4 rounded-xl mb-32 shadow-xl'>
+    <div className='flex flex-col gap-16 bg-[#FFFFFF] p-16 pb-32 mx-4 rounded-xl mb-32 shadow-xl'>
       <h2 className='text-center'>{'What is Palliative Care?'}</h2>
-      <p className='text-center'>
-        {' '}
+      <p className='text-center md:text-left'>
+        {''}
         <span className='font-semibold'>{`Palliative care goes beyond treating illness.`}</span>
         {` It's a holistic approach that addresses not only physical symptoms but also the emotional, social, and spiritual wellbeing of patients and their families.`}
       </p>
 
       {/* Cards */}
-      <div className='flex flex-col gap-4 md:flex-row'>
+      <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-evenly'>
         {/* Physical Care */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
           <img className='mx-auto' src='/images/sobati/PhysicalCare.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>{'Physical Care'}</h3>
@@ -22,7 +22,7 @@ export default function PalliativeCare() {
         </div>
 
         {/* Emotional Support */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
           <img className='mx-auto' src='/images/sobati/EmotionalSupport.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
@@ -33,7 +33,7 @@ export default function PalliativeCare() {
         </div>
 
         {/* Social Connection */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
           <img className='mx-auto' src='/images/sobati/SocialConnection.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
@@ -44,7 +44,7 @@ export default function PalliativeCare() {
         </div>
 
         {/* Spiritual Comfort */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
           <img className='mx-auto' src='/images/sobati/SpiritualComfort.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
