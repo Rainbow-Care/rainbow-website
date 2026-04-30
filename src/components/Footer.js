@@ -58,13 +58,13 @@ const Footer = ({ className }) => {
                 >
                   <img src='/images/instagram.svg' alt='Instagram link'></img>
                 </Link>
-                {/* <Link
-                  href={``}
-                  className='translate-x-[8px] md:translate-x-[1px] md:-translate-y-[4px]'
-                  aria-current='page'
-                >
-                  <img src='/images/youtube.svg' alt='Youtube link'></img>
-                </Link> */}
+                  {/* <Link
+                    href={``}
+                    className='translate-x-[8px] md:translate-x-[1px] md:-translate-y-[4px]'
+                    aria-current='page'
+                  >
+                    <img src='/images/youtube.svg' alt='Youtube link'></img>
+                  </Link> */}
               </div>
             </div>
           </div>
