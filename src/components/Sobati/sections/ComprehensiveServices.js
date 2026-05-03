@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function ComprehensiveServices() {
   return (
-    <div className='flex flex-col gap-4 bg-[#FFFFFF] p-16 mx-4 rounded-xl mb-32 shadow-2xl'>
+    <div className='flex flex-col gap-16 bg-[#FFFFFF] p-16 pb-32 mx-4 rounded-xl mb-32 shadow-2xl'>
       <h2 className='text-center'>{'Our Comprehensive Services'}</h2>
       {/* Cards */}
-      <div className='flex flex-col gap-4 md:flex-row'>
+      <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-evenly'>
         {/* Pain & Symptom Management */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px]'>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img className='mx-auto my-[4px]' src='/images/sobati/Pain.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
@@ -17,7 +17,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Physioterapy */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px]'>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/PhysicalCare.svg'
@@ -30,7 +30,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Nursing Support */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/ChronicIllness.svg'
@@ -43,7 +43,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Counselling Services */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CounsellingServices.svg'
@@ -57,7 +57,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Caregiver Training */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CaregiverTraining.svg'
@@ -71,7 +71,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Care Planning */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 '>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CarePlanning.svg'
@@ -85,7 +85,7 @@ export default function ComprehensiveServices() {
           </div>
         </div>
         {/* Home Care Coordination */}
-        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px]'>
+        <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
           <img className='mx-auto my-[4px]' src='/images/sobati/HomeCare.svg' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
