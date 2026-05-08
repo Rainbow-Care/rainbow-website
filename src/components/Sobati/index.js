@@ -12,7 +12,7 @@ const HeroSection = () => {
     <section
       className={styles.gradient}
       style={{ width: '100%', height: '650px' }}
-    >
+    ><div className='container mx-auto'>
       <Header />
       {/* Why Sobati? */}
       <NeedForSobati />
@@ -25,6 +25,8 @@ const HeroSection = () => {
       {/* The Sobati Difference */}
       <SobatiDifference />
       <Footer />
+    </div>
+
     </section>
   );
 };
