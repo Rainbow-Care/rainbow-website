@@ -8,7 +8,7 @@ export default function ComprehensiveServices() {
       <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-evenly'>
         {/* Pain & Symptom Management */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto my-[4px]' src='/images/sobati/Pain.svg' />
+          <img className='mx-auto my-[4px]' src='/images/sobati/Pain.svg' alt='Pain Management icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
               {'Pain & Symptom Management'}
@@ -21,10 +21,11 @@ export default function ComprehensiveServices() {
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/PhysicalCare.svg'
+            alt='Physiotherapy icon'
           />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
-              {'Physioterapy'}
+              {'Physiotherapy'}
             </h3>
             <p className='text-base text-center'>{`Maintain mobility and independence`}</p>
           </div>
@@ -34,6 +35,7 @@ export default function ComprehensiveServices() {
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/ChronicIllness.svg'
+            alt='Nursing Support icon'
           />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
@@ -47,6 +49,7 @@ export default function ComprehensiveServices() {
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CounsellingServices.svg'
+            alt='Counselling Services icon'
           />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
@@ -61,6 +64,7 @@ export default function ComprehensiveServices() {
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CaregiverTraining.svg'
+            alt='Caregiver Training icon'
           />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
@@ -75,6 +79,7 @@ export default function ComprehensiveServices() {
           <img
             className='mx-auto my-[4px]'
             src='/images/sobati/CarePlanning.svg'
+            alt='Care Planning icon'
           />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
@@ -86,7 +91,7 @@ export default function ComprehensiveServices() {
         </div>
         {/* Home Care Coordination */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto my-[4px]' src='/images/sobati/HomeCare.svg' />
+          <img className='mx-auto my-[4px]' src='/images/sobati/HomeCare.svg' alt='Home Care Coordination icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
               {'Home Care Coordination'}

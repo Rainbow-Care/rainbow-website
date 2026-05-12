@@ -14,7 +14,7 @@ export default function PalliativeCare() {
       <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-evenly'>
         {/* Physical Care */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
-          <img className='mx-auto' src='/images/sobati/PhysicalCare.svg' />
+          <img className='mx-auto' src='/images/sobati/PhysicalCare.svg' alt='Physical Care icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>{'Physical Care'}</h3>
             <p className='text-base text-center'>{`Managing pain and other distressing symptoms to improve quality of life.`}</p>
@@ -23,7 +23,7 @@ export default function PalliativeCare() {
 
         {/* Emotional Support */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
-          <img className='mx-auto' src='/images/sobati/EmotionalSupport.svg' />
+          <img className='mx-auto' src='/images/sobati/EmotionalSupport.svg' alt='Emotional Support icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Emotional Support'}
@@ -34,7 +34,7 @@ export default function PalliativeCare() {
 
         {/* Social Connection */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
-          <img className='mx-auto' src='/images/sobati/SocialConnection.svg' />
+          <img className='mx-auto' src='/images/sobati/SocialConnection.svg' alt='Social Connection icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Social Connection'}
@@ -45,7 +45,7 @@ export default function PalliativeCare() {
 
         {/* Spiritual Comfort */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[166px] md:w-[246px]'>
-          <img className='mx-auto' src='/images/sobati/SpiritualComfort.svg' />
+          <img className='mx-auto' src='/images/sobati/SpiritualComfort.svg' alt='Spiritual Comfort icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Spiritual Comfort'}
