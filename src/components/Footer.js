@@ -73,7 +73,7 @@ const Footer = ({ className }) => {
             <img
               src='/images/rainbow_logo_footer.png'
               className='max-h-[180px] max-w-[160px] md:max-h-[300px] md:max-w-[280px] -translate-x-[24px] translate-y-[28px] md:-translate-x-[44px] md:-translate-y-[50px]'
-              alt='Flowbite Logo'
+              alt='Rainbow Day Care Centre logo'
             />
             <div className='flex flex-row text-xs pb-2 md:pb-0'>
               <svg

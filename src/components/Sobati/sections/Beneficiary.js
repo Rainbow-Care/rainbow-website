@@ -8,7 +8,7 @@ export default function Beneficiary() {
       <div className='flex flex-col gap-4 md:flex-row md:flex-wrap md:justify-evenly'>
         {/* Elderly with Chronic Illness */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto' src='/images/sobati/ChronicIllness.svg' />
+          <img className='mx-auto' src='/images/sobati/ChronicIllness.svg' alt='Chronic Illness icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Elderly with Chronic Illness'}
@@ -19,7 +19,7 @@ export default function Beneficiary() {
 
         {/* Seniors Experiencing Weakness */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto' src='/images/sobati/Seniors.svg' />
+          <img className='mx-auto' src='/images/sobati/Seniors.svg' alt='Seniors icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Seniors Experiencing Weakness'}
@@ -31,7 +31,7 @@ export default function Beneficiary() {
         {/* Family Caregivers
          */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto' src='/images/sobati/Caregivers.svg' />
+          <img className='mx-auto' src='/images/sobati/Caregivers.svg' alt='Caregivers icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center'>
               {'Family Caregivers'}
@@ -43,7 +43,7 @@ export default function Beneficiary() {
         {/* Families Seeking Support
          */}
         <div className='flex flex-col gap-[12px] p-[16px] border-[#1E85A2] rounded-md border-l-4 min-h-[180px] md:h-[174px] md:w-[325px]'>
-          <img className='mx-auto' src='/images/sobati/Families.svg' />
+          <img className='mx-auto' src='/images/sobati/Families.svg' alt='Families icon' />
           <div className='my-[4px]'>
             <h3 className='text-[#1E85A2] text-center mb-[4px]'>
               {'Families Seeking Support'}
